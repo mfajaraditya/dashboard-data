@@ -1,0 +1,67 @@
+CRITICAL - 2022-09-12 20:42:00 --> Invalid file: App\Modules\User\Views\Dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\User\\Views\\Dashboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Dashboard', [], true)
+ 3 APPPATH\Modules\User\Controllers\Home.php(9): view('App\\Modules\\User\\Views\\Dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 21:13:52 --> Undefined variable $url
+in APPPATH\Modules\User\Views\Layout\Template.php on line 18.
+ 1 APPPATH\Modules\User\Views\Layout\Template.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $url', 'APPPATH\\Modules\\User\\Views\\Layout\\Template.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\User\\Views\\Layout\\Template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Layout\\Template', [], true)
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Graphic', [], true)
+ 6 APPPATH\Modules\User\Controllers\Home.php(9): view('App\\Modules\\User\\Views\\Graphic')
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 21:30:27 --> Undefined variable $revenue
+in APPPATH\Modules\User\Views\Graphic.php on line 11.
+ 1 APPPATH\Modules\User\Views\Graphic.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $revenue', 'APPPATH\\Modules\\User\\Views\\Graphic.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\User\\Views\\Graphic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Graphic', [], true)
+ 5 APPPATH\Modules\User\Controllers\Home.php(9): view('App\\Modules\\User\\Views\\Graphic')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 21:30:38 --> Undefined variable $revenue
+in APPPATH\Modules\User\Views\Graphic.php on line 11.
+ 1 APPPATH\Modules\User\Views\Graphic.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $revenue', 'APPPATH\\Modules\\User\\Views\\Graphic.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\User\\Views\\Graphic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Graphic', [], true)
+ 5 APPPATH\Modules\User\Controllers\Home.php(9): view('App\\Modules\\User\\Views\\Graphic')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 21:50:43 --> Invalid file: App\Modules\User\Views\Graphic.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\User\\Views\\Graphic.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Graphic', [], true)
+ 3 APPPATH\Modules\User\Controllers\Home.php(9): view('App\\Modules\\User\\Views\\Graphic')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 21:53:23 --> Invalid file: App\Modules\User\Views\Graphic.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\User\\Views\\Graphic.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Graphic', [], true)
+ 3 APPPATH\Modules\User\Controllers\Home.php(9): view('App\\Modules\\User\\Views\\Graphic')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
