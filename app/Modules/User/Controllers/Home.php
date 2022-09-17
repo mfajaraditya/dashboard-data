@@ -3,10 +3,19 @@
 namespace App\Modules\User\Controllers;
 
 use App\Controllers\BaseController;
+use App\Modules\User\Models\GrafikModel;
 
 class Home extends BaseController{
+     public function __construct()
+     {
+          $this->grafikModel = new GrafikModel();
+     }
+
      public function index(){
-          return view('App\Modules\User\Views\Grafik');
+          $data = [
+               'title' => 'Dashboard Kemiskinan',
+               'revenue' => $this->grafikModel->getGrafik()
+          ];
+          return view('App\Modules\User\Views\Grafik', $data);
      } 
 }
-?>

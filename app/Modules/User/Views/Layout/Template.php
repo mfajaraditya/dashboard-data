@@ -39,7 +39,10 @@
                </div>
           </div>
      </div>
+     <main>
      <?= $this->renderSection('content'); ?>
+     </main>
+
 
      <footer>
           <div class="footer">

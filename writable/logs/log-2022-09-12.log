@@ -65,3 +65,115 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:26:13 --> Undefined variable $testing
+in APPPATH\Modules\User\Views\Grafik.php on line 51.
+ 1 APPPATH\Modules\User\Views\Grafik.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $testing', 'APPPATH\\Modules\\User\\Views\\Grafik.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\User\\Views\\Grafik.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Grafik', [], true)
+ 5 APPPATH\Modules\User\Controllers\Home.php(9): view('App\\Modules\\User\\Views\\Grafik')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:28:09 --> Undefined variable $testing
+in APPPATH\Modules\User\Views\Grafik.php on line 49.
+ 1 APPPATH\Modules\User\Views\Grafik.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $testing', 'APPPATH\\Modules\\User\\Views\\Grafik.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\User\\Views\\Grafik.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Grafik', [], true)
+ 5 APPPATH\Modules\User\Controllers\Home.php(9): view('App\\Modules\\User\\Views\\Grafik')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:29:34 --> Undefined variable $grafik
+in APPPATH\Modules\User\Views\Grafik.php on line 49.
+ 1 APPPATH\Modules\User\Views\Grafik.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $grafik', 'APPPATH\\Modules\\User\\Views\\Grafik.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\User\\Views\\Grafik.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Grafik', [], true)
+ 5 APPPATH\Modules\User\Controllers\Home.php(9): view('App\\Modules\\User\\Views\\Grafik')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:31:07 --> Undefined variable $grafik
+in APPPATH\Modules\User\Views\Grafik.php on line 51.
+ 1 APPPATH\Modules\User\Views\Grafik.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $grafik', 'APPPATH\\Modules\\User\\Views\\Grafik.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\User\\Views\\Grafik.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('App\\Modules\\User\\Views\\Grafik', [], true)
+ 5 APPPATH\Modules\User\Controllers\Home.php(9): view('App\\Modules\\User\\Views\\Grafik')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:35:42 --> Undefined property: App\Modules\User\Controllers\Home::$grefikModel
+in APPPATH\Modules\User\Controllers\Home.php on line 13.
+ 1 APPPATH\Modules\User\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\User\\Controllers\\Home::$grefikModel', 'APPPATH\\Modules\\User\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:35:50 --> Undefined property: App\Modules\User\Controllers\Home::$grafikModel
+in APPPATH\Modules\User\Controllers\Home.php on line 13.
+ 1 APPPATH\Modules\User\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\User\\Controllers\\Home::$grafikModel', 'APPPATH\\Modules\\User\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:36:57 --> Undefined property: App\Modules\User\Controllers\Home::$grafikModel
+in APPPATH\Modules\User\Controllers\Home.php on line 13.
+ 1 APPPATH\Modules\User\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\User\\Controllers\\Home::$grafikModel', 'APPPATH\\Modules\\User\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:40:33 --> Undefined property: App\Modules\User\Controllers\Home::$GrafikModel
+in APPPATH\Modules\User\Controllers\Home.php on line 13.
+ 1 APPPATH\Modules\User\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\User\\Controllers\\Home::$GrafikModel', 'APPPATH\\Modules\\User\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:40:34 --> Undefined property: App\Modules\User\Controllers\Home::$GrafikModel
+in APPPATH\Modules\User\Controllers\Home.php on line 13.
+ 1 APPPATH\Modules\User\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\User\\Controllers\\Home::$GrafikModel', 'APPPATH\\Modules\\User\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:40:44 --> Undefined property: App\Modules\User\Controllers\Home::$grafikModel
+in APPPATH\Modules\User\Controllers\Home.php on line 13.
+ 1 APPPATH\Modules\User\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\User\\Controllers\\Home::$grafikModel', 'APPPATH\\Modules\\User\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:41:04 --> Undefined property: App\Modules\User\Controllers\Home::$grafikModel
+in APPPATH\Modules\User\Controllers\Home.php on line 13.
+ 1 APPPATH\Modules\User\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\User\\Controllers\\Home::$grafikModel', 'APPPATH\\Modules\\User\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:41:24 --> Undefined property: App\Modules\User\Controllers\Home::$grafikModel
+in APPPATH\Modules\User\Controllers\Home.php on line 13.
+ 1 APPPATH\Modules\User\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\User\\Controllers\\Home::$grafikModel', 'APPPATH\\Modules\\User\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\User\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\User\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
