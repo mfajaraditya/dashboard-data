@@ -33,7 +33,7 @@
                          <!-- <i class='bx bx-table'></i> -->
                     </div>
                     <div class="select-active" id="login">
-                         <a>Login</a>
+                         <a href="<?= base_url("/login") ?>">Login</a>
                          <!-- <i class='bx bx-table'></i> -->
                     </div>
                </div>

@@ -39,6 +39,13 @@ $routes->get('/', 'App\Modules\User\Controllers\Home::index');
 $routes->get('Home/(:any)', 'App\Modules\User\Controllers\Home::$1');
 
 
+$routes->add('login', 'App\Modules\Auth\Controllers\Login::index');
+$routes->add('login/(:any)', 'App\Modules\Auth\Controllers\Login::$1');
+$routes->add('signup', 'App\Modules\Auth\Controllers\Signup::index');
+$routes->add('signup/(:any)', 'App\Modules\Auth\Controllers\Signup::$1');
+
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
