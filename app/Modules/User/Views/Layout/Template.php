@@ -19,17 +19,17 @@
           </div>
           <div class="sidebar-menu">
                <div class="pilih-menu">
-                    <div class="select-active-dashboard" id="dashboard">
+                    <div class="select-active" id="dashboard">
                          <!-- <i class='bx bx-grid-alt'></i> -->
-                         <p>Dashboard</p>
+                         <a href="<?= base_url("/") ?>">Dashboard</a>
                     </div>
                     <div class="select-active" id="table">
                          <a></a>
-                         <p>Tabel</p>
+                         <a href="<?= base_url("/tabel") ?>">Tabel</a>
                          <!-- <i class='bx bx-table'></i> -->
                     </div>
                     <div class="select-active" id="admin">
-                         <p>Admin</p>
+                         <a href="<?= base_url("/admin") ?>">Admin</a>
                          <!-- <i class='bx bx-table'></i> -->
                     </div>
                     <div class="select-active" id="login">
@@ -40,7 +40,7 @@
           </div>
      </div>
      <main>
-     <?= $this->renderSection('content'); ?>
+          <?= $this->renderSection('content'); ?>
      </main>
 
 
@@ -49,7 +49,7 @@
                <h1 class="copyright">&copy; Copyright M Fajar Aditya, Siti Roziana Azizah, Almira Syahadati Arsya</h1>
           </div>
      </footer>
-     <script src="/js/index.js"></script>
+     <!-- <script src="/js/index.js"></script> -->
 </body>
 
 </html>

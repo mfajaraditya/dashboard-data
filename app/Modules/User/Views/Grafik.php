@@ -35,27 +35,7 @@
                          <canvas id="myChart"></canvas>
                     </div> -->
      </div>
-     <div class="row">
-          <div class="col">
-               <h1 class="my-3 mt-3">Data Tabel Kemiskinan</h1>
-               <table class="table">
-                    <thead>
-                         <tr>
-                              <th scope="col">No.</th>
-                              <th scope="col">Penghasilan</th>
-                    </thead>
-                    <tbody>
-                         <?php $i = 1; ?>
-                         <?php foreach ($revenue as $g) : ?>
-                              <th scope="row"><?= $i++; ?></th>
-                              <td><?= $g['revenue']; ?></td>
-                              </tr>
-                         <?php endforeach; ?>
-
-                    </tbody>
-               </table>
-          </div>
-     </div>
+     
 </div>
 
 
