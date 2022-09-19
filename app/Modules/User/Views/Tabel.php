@@ -46,6 +46,7 @@
                               <th scope="col">Penghasilan</th>
                               <th scope="col">Pendapatan</th>
                               <th scope="col">Biaya</th>
+                              <th scope="col">Status</th>
                     </thead>
                     <tbody>
                          <?php $i = 1; ?>
@@ -54,6 +55,7 @@
                               <td><?= $g['revenue']; ?></td>
                               <td><?= $g['profit']; ?></td>
                               <td><?= $g['cost']; ?></td>
+                              <td><?= $g['labelaxis']; ?></td>
                               </tr>
                          <?php endforeach; ?>
 

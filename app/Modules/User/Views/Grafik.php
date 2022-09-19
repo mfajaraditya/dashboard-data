@@ -31,80 +31,77 @@
                     <p>20.000 Jiwa</p>
                </div>
           </div>
-          <!-- <div class="chartBox">
-                         <canvas id="myChart"></canvas>
-                    </div> -->
      </div>
-     
+     <div class="card card-success">
+          <div class="card-header">
+               <h3 class="card-title">Bar Chart</h3>
+               <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                         <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                         <i class="fas fa-times"></i>
+                    </button>
+               </div>
+          </div>
+          <div class="card-body">
+               <div class="chart">
+                    <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+               </div>
+          </div>
+          <!-- /.card-body -->
+     </div>
 </div>
-
-
-
-
-<!-- <div class="grafik-content">
-                    <div class="chartBox">
-                         <canvas id="myChart"></canvas>
-                    </div>
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                    <script>
-          // SETUP BLOCK
-
-
-          const data = {
-               labels: labelaxis,
-               datasets: [{
-                    label: 'Pendapatan',
-                    data: revenue,
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    borderWidth: 1
-               }, {
-                    label: 'Profit',
-                    data: profit,
-                    backgroundColor: 'rgba(22, 188, 61, 0.2)',
-                    borderColor: 'rgba(22, 188, 61, 1)',
-                    borderWidth: 1
-               }, {
-                    label: 'Biaya',
-                    data: cost,
-                    backgroundColor: 'rgba(203, 16, 16, 0.2)',
-                    borderColor: 'rgba(203, 16, 16, 1)',
-                    borderWidth: 1
-               }]
-               
-          };
-          // CONFIG Block
-          const config = {
-               type: 'bar',
-               data,
-               options: {
-                    scales: {
-                         y: {
-                              beginAtZero: true
-                         }
-                    }
-               }
-          };
-          // RENDER Block
-          const myChart = new Chart(
-               document.getElementById('myChart'),
-               config
-          );
-
-          function showData(num) {
-               const pendapatanSliced = pendapatan.slice(0, num);
-               const labelaxisSliced = labelaxis.slice(0, num);
-               myChart.data.datasets[0].data = pendapatanSliced;
-               myChart.data.labels = labelaxisSliced;
-               myChart.update();
-          }
-
-          function resetData() {
-               myChart.data.datasets[0].data = pendapatan;
-               myChart.data.labels = labelaxis;
-               myChart.update();
-          }
-     </script>
-               </div> -->
-
 <?= $this->endSection(); ?>
+<?= $this->section('script'); ?>
+<script>
+     $(function() {
+          var areaChartData = {
+               labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+               datasets: [{
+                         label: 'Digital Goods',
+                         backgroundColor: 'rgba(60,141,188,0.9)',
+                         borderColor: 'rgba(60,141,188,0.8)',
+                         pointRadius: false,
+                         pointColor: '#3b8bba',
+                         pointStrokeColor: 'rgba(60,141,188,1)',
+                         pointHighlightFill: '#fff',
+                         pointHighlightStroke: 'rgba(60,141,188,1)',
+                         data: [28, 48, 40, 19, 86, 27, 90]
+                    },
+                    {
+                         label: 'Electronics',
+                         backgroundColor: 'rgba(210, 214, 222, 1)',
+                         borderColor: 'rgba(210, 214, 222, 1)',
+                         pointRadius: false,
+                         pointColor: 'rgba(210, 214, 222, 1)',
+                         pointStrokeColor: '#c1c7d1',
+                         pointHighlightFill: '#fff',
+                         pointHighlightStroke: 'rgba(220,220,220,1)',
+                         data: [65, 59, 80, 81, 56, 55, 40]
+                    },
+               ]
+          }
+
+          var barChartCanvas = $('#barChart').get(0).getContext('2d')
+          var barChartData = $.extend(true, {}, areaChartData)
+          var temp0 = areaChartData.datasets[0]
+          var temp1 = areaChartData.datasets[1]
+          barChartData.datasets[0] = temp1
+          barChartData.datasets[1] = temp0
+
+          var barChartOptions = {
+               responsive: true,
+               maintainAspectRatio: false,
+               datasetFill: false
+          }
+
+          new Chart(barChartCanvas, {
+               type: 'bar',
+               data: barChartData,
+               options: barChartOptions
+          })
+
+     });
+</script>
+<?= $this->endSection() ?>
