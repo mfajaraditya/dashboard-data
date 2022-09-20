@@ -40,10 +40,6 @@
                          <a href="<?= base_url("/tabel") ?>">Tabel</a>
                          <!-- <i class='bx bx-table'></i> -->
                     </div>
-                    <div class="select-active" id="admin">
-                         <a href="<?= base_url("/admin") ?>">Admin</a>
-                         <!-- <i class='bx bx-table'></i> -->
-                    </div>
                     <div class="select-active" id="login">
                          <a href="<?= base_url("/login") ?>">Login</a>
                          <!-- <i class='bx bx-table'></i> -->

@@ -166,3 +166,43 @@ in APPPATH\Modules\User\Views\Tabel.php on line 54.
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 20:58:30 --> Undefined property: App\Modules\Auth\Controllers\Login::$requset
+in APPPATH\Modules\Auth\Controllers\Login.php on line 25.
+ 1 APPPATH\Modules\Auth\Controllers\Login.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\Auth\\Controllers\\Login::$requset', 'APPPATH\\Modules\\Auth\\Controllers\\Login.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\Auth\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 21:00:33 --> Undefined property: App\Modules\Auth\Controllers\Login::$requset
+in APPPATH\Modules\Auth\Controllers\Login.php on line 25.
+ 1 APPPATH\Modules\Auth\Controllers\Login.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\Auth\\Controllers\\Login::$requset', 'APPPATH\\Modules\\Auth\\Controllers\\Login.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\Auth\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 21:47:30 --> Undefined array key "username"
+in APPPATH\Modules\Auth\Controllers\Login.php on line 32.
+ 1 APPPATH\Modules\Auth\Controllers\Login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Modules\\Auth\\Controllers\\Login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\Auth\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 21:47:40 --> Undefined array key "username"
+in APPPATH\Modules\Auth\Controllers\Login.php on line 32.
+ 1 APPPATH\Modules\Auth\Controllers\Login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Modules\\Auth\\Controllers\\Login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\Auth\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 21:48:12 --> Undefined array key "username"
+in APPPATH\Modules\Auth\Controllers\Login.php on line 32.
+ 1 APPPATH\Modules\Auth\Controllers\Login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Modules\\Auth\\Controllers\\Login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Modules\Auth\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

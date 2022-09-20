@@ -26,11 +26,6 @@
 <body>
      <!-- Main Sidebar Container -->
      <aside class="main-sidebar sidebar-dark-primary elevation-4">
-          <!-- Brand Logo -->
-          <a href="#" class="brand-link">
-               <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-               <span class="brand-text font-weight-light">Admin Dashboard</span>
-          </a>
 
           <!-- Sidebar -->
           <div class="sidebar-admin">
@@ -73,7 +68,7 @@
                               <a href="#" class="d-block">Alexander Pierce</a>
                          </div>
                          <li class="nav-item">
-                              <a href="#" class="nav-link active">
+                              <a href="<?= base_url('login/logout') ?>" class="nav-link active">
                                    <p>Logout</p>
                               </a>
                          </li>
