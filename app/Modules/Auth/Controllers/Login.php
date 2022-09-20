@@ -41,7 +41,7 @@ class Login extends BaseController
                     return redirect()->to('admin/');
                } else {
                     $session->setFlashdata('msg', 'Password anda tidak sesuai');
-                    return redirect()->route('/');
+                    return redirect()->back();
                }
           } else {
                $session->setFlashdata('msg', 'Username dan Password anda tidak sesuai');
@@ -56,31 +56,3 @@ class Login extends BaseController
           return redirect()->route('/');
      }
 }
-
-          // if(isset($_POST['submit'])){
-          //      $username = $this->request->getVar('username');
-          //      $password = $this->request->getVar('password');
-
-          //      $model = new UserModel();
-          //      $query = $model->cek_login($username);
-
-          //      if($query->getNumRows() > 0){
-          //           $row = $query->getRowArray();
-
-          //           $pass = $row["password"];
-
-          //           if(password_verify($password, $pass)){
-          //                $session_data = array (
-          //                     "sess_username" => $username,
-          //                     "is_active" => TRUE
-          //                );
-
-          //                session()->set($session_data);
-
-          //                return redirect()->to('App\Modules\Admin\Views\Dashboard');
-          //           } else {
-          //                session()->setFlashdata('message', 'Username dan Password anda tidak sesuai');
-          //           }
-          //      } else {
-          //           session()->setFlashdata('message', 'Periksa kembali Username dan Password anda!');
-          //      }

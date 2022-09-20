@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,10 +25,8 @@
 <body>
      <!-- Main Sidebar Container -->
      <aside class="main-sidebar sidebar-dark-primary elevation-4">
-
           <!-- Sidebar -->
           <div class="sidebar-admin">
-
                <!-- Sidebar Menu -->
                <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
@@ -52,20 +49,10 @@
                                              <p>Active Page</p>
                                         </a>
                                    </li>
-                                   <li class="nav-item">
-                                        <a href="#" class="nav-link active">
-                                             <p>Active Page</p>
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a href="#" class="nav-link active">
-                                             <p>Active Page</p>
-                                        </a>
-                                   </li>
                               </ul>
                          </li>
                          <div class="info-admin">
-                              <a href="#" class="d-block">Alexander Pierce</a>
+                              <a href="#" class="d-block"><?= session()->name; ?></a>
                          </div>
                          <li class="nav-item">
                               <a href="<?= base_url('login/logout') ?>" class="nav-link active">
@@ -74,18 +61,11 @@
                          </li>
                     </ul>
                </nav>
-
-               <!-- <div class="info">
-                         <a href="#" class="d-block">Alexander Pierce</a>
-                    </div> -->
-               <!-- /.sidebar-menu -->
           </div>
-          <!-- /.sidebar -->
      </aside>
      <main>
           <?= $this->renderSection('content'); ?>
      </main>
-
      <footer>
           <div class="footer">
                <h1 class="copyright-admin">&copy; Copyright M Fajar Aditya, Siti Roziana Azizah, Almira Syahadati Arsya</h1>

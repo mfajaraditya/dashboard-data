@@ -30,33 +30,26 @@
                     <p>20.000 Jiwa</p>
                </div>
           </div>
-          <!-- <div class="chartBox">
-                         <canvas id="myChart"></canvas>
-                    </div> -->
      </div>
 
+     <h1 class="my-3 mt-3">Data Tabel Kemiskinan</h1>
+     <table class="table table-bordered border-primary">
+          <thead>
+               <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Jam Kerja</th>
+          </thead>
+          <tbody>
+               <?php $i = 1; ?>
+               <?php foreach ($total as $t) : ?>
+                    <th scope="row"><?= $i++; ?></th>
+                    <td><?= $t['penduduk_nama']; ?></td>
+                    <td><?= $t['jam_kerja']; ?></td>
+                    </tr>
+               <?php endforeach; ?>
 
-     <div class="row">
-          <div class="col">
-               <h1 class="my-3 mt-3">Data Tabel Kemiskinan</h1>
-               <table class="table">
-                    <thead>
-                         <tr>
-                              <th scope="col">No.</th>
-                              <th scope="col">Jam Kerja</th>
-
-                    </thead>
-                    <tbody>
-                         <?php $i = 1; ?>
-                         <?php foreach ($total as $t) : ?>
-                              <th scope="row"><?= $i++; ?></th>
-                              <td><?= $t['daya_listrik_nama']; ?></td>
-                              </tr>
-                         <?php endforeach; ?>
-
-                    </tbody>
-               </table>
-          </div>
-     </div>
+          </tbody>
+     </table>
 </div>
 <?= $this->endSection(); ?>
