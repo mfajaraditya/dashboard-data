@@ -39,13 +39,12 @@ $routes->get('/', 'App\Modules\User\Controllers\Home::index');
 $routes->add('tabel', 'App\Modules\User\Controllers\Tabel::index');
 $routes->add('tabel/(:any)', 'App\Modules\User\Controllers\Tabel::index');
 
-
 $routes->add('login', 'App\Modules\Auth\Controllers\Login::index');
 $routes->add('login/(:any)', 'App\Modules\Auth\Controllers\Login::$1');
 $routes->add('signup', 'App\Modules\Auth\Controllers\Signup::index');
 $routes->add('signup/(:any)', 'App\Modules\Auth\Controllers\Signup::$1');
 
-
+$routes->add('admin', 'App\Modules\Admin\Controllers\Home::index');
 
 /*
  * --------------------------------------------------------------------

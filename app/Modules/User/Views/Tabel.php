@@ -43,19 +43,14 @@
                     <thead>
                          <tr>
                               <th scope="col">No.</th>
-                              <th scope="col">Penghasilan</th>
-                              <th scope="col">Pendapatan</th>
-                              <th scope="col">Biaya</th>
-                              <th scope="col">Status</th>
+                              <th scope="col">Jam Kerja</th>
+
                     </thead>
                     <tbody>
                          <?php $i = 1; ?>
-                         <?php foreach ($revenue as $g) : ?>
+                         <?php foreach ($total as $t) : ?>
                               <th scope="row"><?= $i++; ?></th>
-                              <td><?= $g['revenue']; ?></td>
-                              <td><?= $g['profit']; ?></td>
-                              <td><?= $g['cost']; ?></td>
-                              <td><?= $g['labelaxis']; ?></td>
+                              <td><?= $t['daya_listrik_nama']; ?></td>
                               </tr>
                          <?php endforeach; ?>
 

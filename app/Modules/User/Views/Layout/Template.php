@@ -20,7 +20,7 @@
      <link rel="stylesheet" href="<?= base_url('plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
      <!-- JQVMap -->
      <link rel="stylesheet" href="<?= base_url('plugins/jqvmap/jqvmap.min.css'); ?>">
-     <title>Document</title>
+     <title><?= $title; ?></title>
 </head>
 
 <body>
@@ -54,8 +54,6 @@
      <main>
           <?= $this->renderSection('content'); ?>
      </main>
-
-
      <footer>
           <div class="footer">
                <h1 class="copyright">&copy; Copyright M Fajar Aditya, Siti Roziana Azizah, Almira Syahadati Arsya</h1>

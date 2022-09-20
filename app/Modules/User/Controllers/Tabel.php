@@ -16,7 +16,7 @@ class Tabel extends BaseController
      {
           $data = [
                'title' => 'Dashboard Kemiskinan',
-               'revenue' => $this->grafikModel->getGrafik()
+               'total' => $this->grafikModel->getGrafik()
           ];
           return view('App\Modules\User\Views\Tabel', $data);
      }
