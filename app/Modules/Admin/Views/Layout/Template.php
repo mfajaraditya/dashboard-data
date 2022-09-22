@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,66 +12,87 @@
      <link rel="stylesheet" href="<?= base_url('dist/css/adminlte.min.css'); ?>">
      <!-- Font Awesome -->
      <link rel="stylesheet" href="<?= base_url('plugins/fontawesome-free/css/all.min.css'); ?>">
-     <!-- Ionicons -->
-     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-     <!-- Tempusdominus Bootstrap 4 -->
-     <link rel="stylesheet" href="<?= base_url('plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css'); ?>" ?>
-     <!-- iCheck -->
-     <link rel="stylesheet" href="<?= base_url('plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
-     <!-- JQVMap -->
-     <link rel="stylesheet" href="<?= base_url('plugins/jqvmap/jqvmap.min.css'); ?>">
-     <title>Document</title>
+     <link rel="stylesheet" href="<?= base_url('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css'); ?>">
+     <link rel="stylesheet" href="<?= base_url('plugins/datatables-responsive/css/responsive.bootstrap4.min.css'); ?>">
+     <link rel="stylesheet" href="<?= base_url('plugins/datatables-buttons/css/buttons.bootstrap4.min.css'); ?>">
+     <title><?= $title; ?></title>
 </head>
 
 <body>
-     <!-- Main Sidebar Container -->
-     <aside class="main-sidebar sidebar-dark-primary elevation-4">
-          <!-- Sidebar -->
-          <div class="sidebar-admin">
-               <!-- Sidebar Menu -->
-               <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
-                         <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-                         <li class="nav-item has-treeview menu-open">
-                              <ul class="nav nav-treeview">
-                                   <li class="nav-item">
-                                        <a href="#" class="nav-link active">
-                                             <p>Data Page</p>
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a href="#" class="nav-link active">
-                                             <p>Input Page</p>
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a href="#" class="nav-link active">
-                                             <p>Active Page</p>
-                                        </a>
-                                   </li>
-                              </ul>
-                         </li>
-                         <div class="info-admin">
-                              <a href="#" class="d-block"><?= session()->name; ?></a>
-                         </div>
-                         <li class="nav-item">
-                              <a href="<?= base_url('login/logout') ?>" class="nav-link active">
-                                   <p>Logout</p>
-                              </a>
-                         </li>
-                    </ul>
-               </nav>
+     <div class="sidebar">
+          <div class="sidebar-menu">
+               <div class="pilih-menu">
+                    <div class="select-active" id="dashboard">
+                         <!-- <i class='bx bx-grid-alt'></i> -->
+                         <a href="<?= base_url("admin") ?>">Data Page</a>
+                    </div>
+                    <div class="select-active" id="table">
+                         <a></a>
+                         <a href="<?= base_url("input") ?>">Input Page</a>
+                         <!-- <i class='bx bx-table'></i> -->
+                    </div>
+                    <div class="select-active" id="login">
+                         <a href="<?= base_url("#") ?>">Active Page</a>
+                         <!-- <i class='bx bx-table'></i> -->
+                    </div>
+                    <div class="info-admin">
+                         <a href="#" class="d-block"><?= session()->name; ?></a>
+                    </div>
+                    <div class="select-active">
+                         <a href="<?= base_url('login/logout') ?>"">
+                              <p>Logout</p>
+                         </a>
+                    </div>
+               </div>
           </div>
-     </aside>
+     </div>
+
      <main>
           <?= $this->renderSection('content'); ?>
      </main>
      <footer>
-          <div class="footer">
-               <h1 class="copyright-admin">&copy; Copyright M Fajar Aditya, Siti Roziana Azizah, Almira Syahadati Arsya</h1>
-          </div>
-     </footer>
+          <div class=" footer">
+                              <h1 class="copyright-admin">&copy; Copyright M Fajar Aditya, Siti Roziana Azizah, Almira Syahadati Arsya</h1>
+                    </div>
+                    </footer>
+                    <!-- jQuery -->
+                    <script src="<?= base_url('plugins/jquery/jquery.min.js'); ?>"></script>
+                    <!-- Bootstrap 4 -->
+                    <script src="<?= base_url('plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+                    <!-- DataTables  & Plugins -->
+                    <script src="<?= base_url('plugins/datatables/jquery.dataTables.min.js'); ?>"></script>
+                    <script src="<?= base_url('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js'); ?>"></script>
+                    <script src="<?= base_url('plugins/datatables-responsive/js/dataTables.responsive.min.js'); ?>"></script>
+                    <script src="<?= base_url('plugins/datatables-responsive/js/responsive.bootstrap4.min.js'); ?>"></script>
+                    <script src="<?= base_url('plugins/datatables-buttons/js/dataTables.buttons.min.js'); ?>"></script>
+                    <script src="<?= base_url('plugins/datatables-buttons/js/buttons.bootstrap4.min.js'); ?>"></script>
+                    <script src="<?= base_url('plugins/jszip/jszip.min.js'); ?>"></script>
+                    <script src="<?= base_url('plugins/pdfmake/pdfmake.min.js"'); ?>"></script>
+                    <script src="<?= base_url('plugins/pdfmake/vfs_fonts.js'); ?>"></script>
+                    <script src="<?= base_url('plugins/datatables-buttons/js/buttons.html5.min.js'); ?>"></script>
+                    <script src="<?= base_url('plugins/datatables-buttons/js/buttons.print.min.js'); ?>"></script>
+                    <script src="<?= base_url('plugins/datatables-buttons/js/buttons.colVis.min.js'); ?>"></script>
+                    <!-- AdminLTE App -->
+                    <script src="../../dist/js/adminlte.min.js"></script>
+                    <script>
+                         $(function() {
+                              $("#example1").DataTable({
+                                   "responsive": true,
+                                   "lengthChange": false,
+                                   "autoWidth": false,
+                                   "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+                              }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+                              $('#example2').DataTable({
+                                   "paging": true,
+                                   "lengthChange": false,
+                                   "searching": false,
+                                   "ordering": true,
+                                   "info": true,
+                                   "autoWidth": false,
+                                   "responsive": true,
+                              });
+                         });
+                    </script>
 </body>
 
 </html>

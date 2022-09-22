@@ -32,7 +32,7 @@
           </div>
      </div>
 
-     <h1 class="my-3 mt-3">Data Tabel Kemiskinan</h1>
+     <h1 class="my-3 mt-3 ">Data Tabel Kemiskinan</h1>
      <table class="table table-bordered border-primary">
           <thead>
                <tr>
