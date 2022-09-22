@@ -81,8 +81,7 @@ main {
 .container {
   background-color: #87805e;
   border-radius: 20px;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px 0 100px 20px;
   height: 100%;
 }
 

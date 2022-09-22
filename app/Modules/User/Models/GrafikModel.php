@@ -6,12 +6,12 @@ use CodeIgniter\Model;
 
 class GrafikModel extends Model
 {
-     protected $table = 'uti_daya_listrik';
-     protected $primaryKey = 'daya_listrik_id';
-     protected $allowedFields = 'daya_listrik_nama';
+     protected $table = 'data_penduduk';
+     protected $primaryKey = 'penduduk_id';
+     protected $allowedFields = ['jam_kerja', 'penduduk_nama'];
 
      public function getGrafik()
      {
-          return $this->findAll();
+          return $this->findAll(13);
      }
 }
