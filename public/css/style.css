@@ -29,14 +29,6 @@ main {
   border-radius: 20px;
 }
 
-.sidebar-admin {
-  margin: 70px 15px 0 15px;
-  padding-bottom: 15px;
-  background-color: #87805e;
-  border-radius: 20px;
-}
-
-
 .logo-content {
   padding-top: 20px;
   display: flex;
@@ -49,6 +41,7 @@ main {
 
 .sidebar-menu {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -118,7 +111,6 @@ main {
 }
 
 .info-admin {
-  flex-direction: column;
   margin: 0 auto;
   padding: 10px;
   border-radius: 20px;
@@ -160,10 +152,5 @@ footer {
 .copyright {
   text-align: center;
   margin-top: 10px;
-  font-size: 14px;
-}
-.copyright-admin {
-  margin-top: 10px;
-  padding-left: 22%;
   font-size: 14px;
 }

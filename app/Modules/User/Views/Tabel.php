@@ -11,7 +11,7 @@
                     <p>Total Data</p>
                </div>
                <div class="content-info">
-                    <p>20.000 Jiwa</p>
+               <p><?php echo $total_data; ?></p>
                </div>
           </div>
           <div class="info">

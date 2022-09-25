@@ -14,7 +14,8 @@ class Home extends BaseController{
      public function index(){
           $data = [
                'title' => 'Dashboard Kemiskinan',
-               'revenue' => $this->grafikModel->getGrafik()
+               'revenue' => $this->grafikModel->getGrafik(),
+               'total_data' => $this->grafikModel->totalData()
           ];
           return view('App\Modules\User\Views\Grafik', $data);
      } 

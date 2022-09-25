@@ -11,7 +11,12 @@ class GrafikModel extends Model
      protected $allowedFields = ['jam_kerja', 'penduduk_nama'];
 
      public function getGrafik()
+     {    
+          return $this->findAll(20);
+     }
+
+     public function totalData()
      {
-          return $this->findAll(13);
+          return $this->countAll();
      }
 }

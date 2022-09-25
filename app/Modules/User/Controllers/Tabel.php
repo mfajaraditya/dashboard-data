@@ -16,7 +16,8 @@ class Tabel extends BaseController
      {
           $data = [
                'title' => 'Dashboard Kemiskinan',
-               'total' => $this->tabelModel->getTabel()
+               'total' => $this->tabelModel->getTabel(),
+               'total_data' => $this->tabelModel->totalData()
           ];
           return view('App\Modules\User\Views\Tabel', $data);
      }

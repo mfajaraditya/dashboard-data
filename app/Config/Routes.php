@@ -45,7 +45,6 @@ $routes->add('signup', 'App\Modules\Auth\Controllers\Signup::index');
 $routes->add('signup/(:any)', 'App\Modules\Auth\Controllers\Signup::$1');
 
 $routes->add('admin', 'App\Modules\Admin\Controllers\Home::index');
-$routes->add('input', 'App\Modules\Admin\Controllers\Input::index');
 
 /*
  * --------------------------------------------------------------------
