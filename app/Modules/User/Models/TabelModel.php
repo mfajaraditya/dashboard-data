@@ -12,7 +12,7 @@ class TabelModel extends Model
 
      public function getTabel()
      {
-          return $this->findAll(50);
+          return $this->findAll(200);
      }
 
      public function totalData()
