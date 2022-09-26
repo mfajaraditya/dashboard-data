@@ -18,6 +18,6 @@ class TabelModel extends Model
      public function totalData()
      {
           return $this->countAll();
-     }
+     }   
 }
 

@@ -65,7 +65,7 @@
                     <script src="<?= base_url('plugins/datatables-buttons/js/dataTables.buttons.min.js'); ?>"></script>
                     <script src="<?= base_url('plugins/datatables-buttons/js/buttons.bootstrap4.min.js'); ?>"></script>
                     <script src="<?= base_url('plugins/jszip/jszip.min.js'); ?>"></script>
-                    <script src="<?= base_url('plugins/pdfmake/pdfmake.min.js"'); ?>"></script>
+                    <script src="<?= base_url('plugins/datatables-buttons/js/pdfmake.min.js'); ?>"></script>
                     <script src="<?= base_url('plugins/pdfmake/vfs_fonts.js'); ?>"></script>
                     <script src="<?= base_url('plugins/datatables-buttons/js/buttons.html5.min.js'); ?>"></script>
                     <script src="<?= base_url('plugins/datatables-buttons/js/buttons.print.min.js'); ?>"></script>
@@ -80,15 +80,6 @@
                                    "autoWidth": false,
                                    "buttons": ["copy", "csv", "excel", "pdf", "print"]
                               }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-                              $('#example2').DataTable({
-                                   "paging": true,
-                                   "lengthChange": false,
-                                   "searching": false,
-                                   "ordering": true,
-                                   "info": true,
-                                   "autoWidth": false,
-                                   "responsive": true,
-                              });
                          });
                     </script>
 </body>

@@ -165,7 +165,7 @@
      <!-- Bootstrap -->
      <script src="<?= base_url('plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
      <!-- AdminLTE -->
-     <script src="<?= base_url('plugins/adminlte/adminlte.min.js'); ?>"></script>
+     <script src="<?= base_url('dist/js/adminlte.min.js'); ?>"></script>
      <!-- Sparkline -->
      <script src="<?= base_url('plugins/sparklines/sparkline.js'); ?>"></script>
      <!-- JQVMap -->

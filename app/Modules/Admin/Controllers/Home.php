@@ -19,4 +19,19 @@ class Home extends BaseController
           ];
           return view('App\Modules\Admin\Views\Dashboard', $data);
      }
+
+     public function update($penduduk_id)
+     {
+          $data = [
+               'edit' => $this->tabelModel->find($penduduk_id),
+               'title' => 'Edit Data'
+          ];
+          return view('App\Modules\Admin\Views\EditData', $data);
+     }
+
+     public function delete($penduduk_id)
+     {
+          $this->tabelModel->delete($penduduk_id);
+          return view('App\Modules\Admin\Views\Dashboard');
+     }
 }

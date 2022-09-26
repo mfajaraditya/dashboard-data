@@ -16,6 +16,7 @@
                                         <tr>
                                              <th scope="col">No.</th>
                                              <th scope="col">Nama</th>
+                                             <th scope="col">Umur</th>
                                              <th scope="col">Jam Kerja</th>
                                              <th scope="col">Aksi</th>
                                         </tr>
@@ -25,13 +26,14 @@
                                              <?php $i = 1; ?>
                                              <?php foreach ($tabel as $t) : ?>
                                                   <th scope="row"><?= $i++; ?></th>
-                                                  <td><?= $t['penduduk_nama']; ?></td>
+                                                  <td><?= $t['nama']; ?></td>
+                                                  <td><?= $t['umur']; ?></td>
                                                   <td><?= $t['jam_kerja']; ?></td>
-                                                  <td><a href="<?= base_url('admin/update'); ?>">
+                                                  <td><a href="<?= base_url('testing/update') . '/' .$t['id']; ?>">
                                                             <i class="bi bi-pencil-square" id="edit"></i>
                                                        </a>
                                                        |
-                                                       <a href="<?= base_url('admin/delete'); ?>">
+                                                       <a href="<?= base_url('testing/delete') .'/' .$t['id']; ?>">
                                                             <i class="bi bi-trash3-fill" id="delete"></i>
                                                        </a>
                                                   </td>
