@@ -11,7 +11,7 @@ $uri = service('uri');
 </li>
 <li class="nav-item <?= $uri->getSegment(1) === 'table' ? 'active' : '' ?>">
     <a class="nav-link" href="<?= base_url('table') ?>">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
+    <i class="fas fa-fw fa-table"></i>
         <span>Table</span>
     </a>
 </li>

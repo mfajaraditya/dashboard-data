@@ -16,7 +16,10 @@
   <div class="daftar-masuk">
     <?= form_open(base_url('login/auth')) ?>
     <div class="container-daftar-masuk">
-      <h1>Masuk</h1>
+      <div class="header-masuk">
+        <h1>Masuk</h1>
+      </div>
+
       <div class="container-form-daftar-masuk">
         <?php if (session()->getFlashdata('msg')) : ?>
           <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>

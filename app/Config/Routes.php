@@ -14,7 +14,8 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 
 $routes->get('/dashboard', 'Home::index');
-$routes->get('/table', 'Home::index');
+$routes->get('/table', 'Tabel::index');
+$routes->get('/login', 'Login::index');
 
 // $routes->add('login', 'App\Modules\Auth\Controllers\Login::index');
 // $routes->add('login/(:any)', 'App\Modules\Auth\Controllers\Login::$1');

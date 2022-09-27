@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\User\Controllers;
+namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Modules\User\Models\TabelModel;
+use App\Models\TabelModel;
 
 class Tabel extends BaseController
 {
@@ -19,6 +19,6 @@ class Tabel extends BaseController
                'total' => $this->tabelModel->getTabel(),
                'total_data' => $this->tabelModel->totalData()
           ];
-          return view('tabel', $data);
+          return view('table', $data);
      }
 }
