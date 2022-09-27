@@ -3,14 +3,14 @@ $uri = service('uri');
 ?>
 
 <hr class="sidebar-divider my-0">
-<li class="nav-item <?= $uri->getSegment(1) === 'dashboard' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('dashboard') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === 'dashboard' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('admin/dashboard') ?>">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(1) === 'tabel' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('tabel') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === 'tabel' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('admin/tabel') ?>">
     <i class="fas fa-fw fa-table"></i>
         <span>Table</span>
     </a>

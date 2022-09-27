@@ -53,6 +53,6 @@ class Login extends BaseController
      {
           $session = session();
           $session->destroy();
-          return redirect()->route('/dashboard');
+          return view('/user/home');
      }
 }

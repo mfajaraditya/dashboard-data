@@ -29,6 +29,6 @@ class Home extends BaseController
             'total' => $this->tabelModel->getTabel(),
             'total_data' => $this->tabelModel->totalData()
        ];
-       return view('/user/table', $data);
+       return view('/user/tabel', $data);
     }
 }

@@ -13,12 +13,14 @@ $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 
-$routes->get('/dashboard', 'Home::index');
-$routes->get('/tabel', 'Home::tabel');
+$routes->get('/user/dashboard', 'Home::index');
+$routes->get('/user/tabel', 'Home::tabel');
 $routes->add('/login', 'Login::index');
 $routes->post('/login/auth', 'Login::auth');
+$routes->get('/login/logout', 'Login::logout');
 
-$routes->add('/admin', 'Admin::index');
+$routes->add('/admin/dashboard', 'Admin::index', ['filter' => 'adminOnly']);
+$routes->add('/admin/tabel', 'Admin::tabel', ['filter' => 'adminOnly']);
 
 // $routes->add('login', 'App\Modules\Auth\Controllers\Login::index');
 // $routes->add('login/(:any)', 'App\Modules\Auth\Controllers\Login::$1');

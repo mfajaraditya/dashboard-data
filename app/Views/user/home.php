@@ -47,16 +47,7 @@
                     </div>
                </div>
 
-               <div>
-                    <?php
-                    if ($total) :
-                         foreach ($total as $rev) :
-                              $penduduk_nama[] = $rev['penduduk_nama'];
-                              $jam_kerja[] = $rev['jam_kerja'];
-                         endforeach;
-                    endif;
-                    ?>
-               </div>
+ 
           </div>
      </div>
 </div>
