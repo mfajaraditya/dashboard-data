@@ -5,7 +5,8 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\UserModel;
 
-class Login extends BaseController{
+class Login extends BaseController
+{
      protected $UserModel;
      public function __construct()
      {
@@ -37,7 +38,7 @@ class Login extends BaseController{
                          'name' => $data['name']
                     ];
                     $session->set($ses_data);
-                    return redirect()->to('/table');
+                    return view('/admin/home');
                } else {
                     $session->setFlashdata('msg', 'Password anda tidak sesuai');
                     return redirect()->back();
@@ -52,6 +53,6 @@ class Login extends BaseController{
      {
           $session = session();
           $session->destroy();
-          return redirect()->route('/');
+          return redirect()->route('/dashboard');
      }
 }

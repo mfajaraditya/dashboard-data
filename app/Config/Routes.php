@@ -15,7 +15,10 @@ $routes->set404Override();
 
 $routes->get('/dashboard', 'Home::index');
 $routes->get('/table', 'Tabel::index');
-$routes->get('/login', 'Login::index');
+$routes->add('/login', 'Login::index');
+$routes->post('/login/auth', 'Login::auth');
+
+$routes->add('/admin', 'Admin::index');
 
 // $routes->add('login', 'App\Modules\Auth\Controllers\Login::index');
 // $routes->add('login/(:any)', 'App\Modules\Auth\Controllers\Login::$1');

@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
-  background: linear-gradient(90deg, rgba(150,148,204,1) 0%, rgba(85,85,240,0.9254593194699755) 50%, rgba(150,148,204,1) 100%);
+  /* background: linear-gradient(90deg, rgba(150,148,204,1) 0%, rgba(85,85,240,0.9254593194699755) 50%, rgba(150,148,204,1) 100%); */
+  background-color: #4e73df;
 }
 
 .daftar-masuk {
@@ -19,9 +20,9 @@ body {
   justify-content: center;
   border-radius: 6px;
   background-color: white;
-  box-shadow: 2px 2px 11px 6px rgba(70,70,70,0.75);
-  -webkit-box-shadow: 2px 2px 11px 6px rgba(70,70,70,0.75);
-  -moz-box-shadow: 2px 2px 11px 6px rgba(70,70,70,0.75);
+  box-shadow: 2px 2px 11px 6px rgba(150, 150, 150, 0.75);
+  -webkit-box-shadow: 2px 2px 11px 6px rgba(150, 150, 150, 0.75);
+  -moz-box-shadow: 2px 2px 11px 6px rgba(150, 150, 150, 0.75);
 }
 
 .container-daftar-masuk {
@@ -37,8 +38,8 @@ body {
 
 .header-masuk {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 30px;
+  border-bottom: 2.5px solid #1f1f1f;
 }
 
 .container-daftar-masuk h1 {
@@ -75,7 +76,6 @@ body {
   padding: 15px 13px;
   border-radius: 8px;
   font-size: 14px;
-  color: black;
   outline: none;
 }
 
@@ -92,10 +92,11 @@ body {
 
 .button:hover {
   transition: 0.2s 0.01s ease-in;
-background-color: #5555F0;
+  background-color: #5555f0;
 }
 
 .button p {
   font-size: 16px;
   font-weight: 600;
+  color: #1f1f1f;
 }

@@ -19,6 +19,6 @@ class Tabel extends BaseController
                'total' => $this->tabelModel->getTabel(),
                'total_data' => $this->tabelModel->totalData()
           ];
-          return view('table', $data);
+          return view('/user/table', $data);
      }
 }

@@ -18,6 +18,6 @@ class Home extends BaseController
             'title' => 'Dashboard Kemiskinan',
             'total' => $this->grafikModel->getGrafik(),
         ];
-        return view('home', $data);
+        return view('/user/home', $data);
     }
 }
