@@ -17,7 +17,7 @@
     <?= form_open(base_url('login/auth')) ?>
     <div class="container-daftar-masuk">
       <div class="header-masuk">
-        <h1>Masuk</h1>
+        <h1>LOG IN</h1>
       </div>
 
       <div class="container-form-daftar-masuk">

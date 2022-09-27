@@ -6,11 +6,12 @@
 }
 
 .login-text {
-  color: black;
+  color: #4e73df;
   padding-top: 10px;
   margin: 0 30px 0 30px;
   font-weight: 700;
 }
+
 
 /* body {
   width: 100%;

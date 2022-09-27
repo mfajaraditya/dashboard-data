@@ -14,7 +14,7 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 
 $routes->get('/dashboard', 'Home::index');
-$routes->get('/table', 'Tabel::index');
+$routes->get('/tabel', 'Home::tabel');
 $routes->add('/login', 'Login::index');
 $routes->post('/login/auth', 'Login::auth');
 

@@ -9,8 +9,8 @@ $uri = service('uri');
         <span>Dashboard</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(1) === 'table' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('table') ?>">
+<li class="nav-item <?= $uri->getSegment(1) === 'tabel' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('tabel') ?>">
     <i class="fas fa-fw fa-table"></i>
         <span>Table</span>
     </a>

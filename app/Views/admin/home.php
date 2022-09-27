@@ -1,4 +1,4 @@
-<?= $this->extend('layout/index') ?>
+<?= $this->extend('/admin/layout/index') ?>
 
 <?= $this->section('css') ?>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.css" />

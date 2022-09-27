@@ -8,15 +8,22 @@
 }
 
 body {
+  /* background-color: #4158d0; */
+  background: linear-gradient(
+    90deg,
+    #4158d0 0%,
+    #c850c0 50%,
+    #ffcc70 100%
+  );
+
   /* background: linear-gradient(90deg, rgba(150,148,204,1) 0%, rgba(85,85,240,0.9254593194699755) 50%, rgba(150,148,204,1) 100%); */
-  background-color: #4e73df;
+  /* background-color: #4e73df; */
 }
 
 .daftar-masuk {
   width: 450px;
   margin: 60px auto;
   display: flex;
-  align-items: center;
   justify-content: center;
   border-radius: 6px;
   background-color: white;
@@ -30,32 +37,30 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 30px;
   margin-top: 10px;
   border-radius: 8px;
   height: 450px;
 }
 
 .header-masuk {
-  display: flex;
+  align-items: center;
   margin-bottom: 30px;
-  border-bottom: 2.5px solid #1f1f1f;
+  border-bottom: 2px solid rgba(31, 31, 31, 0.45);
+}
+
+.header-masuk h1 {
+  text-align: center;
 }
 
 .container-daftar-masuk h1 {
   text-align: center;
   color: #1f1f1f;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .container-daftar-masuk h4 {
   text-align: center;
-  font-size: 15px;
-  margin-top: 8px;
-}
-
-.container-daftar-masuk h4 a {
-  color: #fb6000;
+  font-size: 16px;
 }
 
 .container-form-daftar-masuk {
@@ -68,21 +73,19 @@ body {
 .form-daftar-masuk p {
   font-size: 14px;
   display: none;
-  color: gray;
 }
 
 .input {
   width: 350px;
-  padding: 15px 13px;
-  border-radius: 8px;
+  padding: 15px 15px;
+  border-radius: 6px;
   font-size: 14px;
-  outline: none;
 }
 
 .button {
   width: 100%;
   height: 54px;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -93,6 +96,7 @@ body {
 .button:hover {
   transition: 0.2s 0.01s ease-in;
   background-color: #5555f0;
+  color: white;
 }
 
 .button p {
