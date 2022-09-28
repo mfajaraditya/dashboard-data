@@ -19,8 +19,12 @@ $routes->add('/login', 'Login::index');
 $routes->post('/login/auth', 'Login::auth');
 $routes->get('/login/logout', 'Login::logout');
 
-$routes->add('/admin/dashboard', 'Admin::index', ['filter' => 'adminOnly']);
-$routes->add('/admin/tabel', 'Admin::tabel', ['filter' => 'adminOnly']);
+$routes->add('admin/dashboard', 'Admin::index', ['filter' => 'adminOnly']);
+$routes->add('admin/tabel', 'Admin::tabel', ['filter' => 'adminOnly']);
+$routes->add('admin/(any:)', 'Admin::$1', ['filter' => 'adminOnly']);
+$routes->add('admin/update/(:segment)', 'Admin::update/$1', ['filter' => 'adminOnly']);
+$routes->add('admin/edit/(:segment)', 'Admin::edit/$1', ['filter' => 'adminOnly']);
+$routes->add('admin/delete/(:segment)', 'Admin::delete/$1', ['filter' => 'adminOnly']);
 
 // $routes->add('login', 'App\Modules\Auth\Controllers\Login::index');
 // $routes->add('login/(:any)', 'App\Modules\Auth\Controllers\Login::$1');

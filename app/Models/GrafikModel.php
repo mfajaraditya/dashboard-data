@@ -14,4 +14,9 @@ class GrafikModel extends Model
      {
           return $this->findAll(15);
      }
+
+     public function totalData()
+     {
+          return $this->countAll();
+     }
 }

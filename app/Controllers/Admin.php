@@ -17,9 +17,10 @@ class Admin extends BaseController
      {
           $data = [
                'title' => 'Dashboard Kemiskinan',
-               'total' => $this->grafikModel->getGrafik(),
-           ];
-           return view('/admin/home', $data);
+               'total' => $this->tabelModel->getTabel(),
+               'total_data' => $this->tabelModel->totalData()
+          ];
+          return view('/admin/home', $data);
      }
 
      public function tabel()
@@ -29,6 +30,32 @@ class Admin extends BaseController
                'total' => $this->tabelModel->getTabel(),
                'total_data' => $this->tabelModel->totalData()
           ];
-          return view('/admin/tabel', $data);
+          return view('admin/tabel', $data);
+     }
+
+     public function update($id)
+     {
+          $data = [
+               'edit' => $this->tabelModel->find($id),
+               'title' => 'Edit Data'
+          ];
+          return view('/admin/update', $data);
+     }
+
+     public function delete($id)
+     {
+          $this->tabelModel->delete($id);
+          return redirect()->back();
+     }
+
+     public function edit($id)
+     {
+          $this->tabelModel->save([
+               'id' => $id,
+               'nama' => $this->request->getVar('nama'),
+               'umur' => $this->request->getVar('umur'),
+               'jam_kerja' => $this->request->getVar('jam_kerja'),
+          ]);
+          return redirect()->to('admin/tabel');
      }
 }

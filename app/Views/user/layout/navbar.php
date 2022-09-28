@@ -4,10 +4,11 @@
     </button>
     <ul class="navbar-nav ml-auto">
         <div class="topbar-divider d-none d-sm-block"></div>
-        <li class="nav-item dropdown no-arrow">
-            <a class="login-text" href="<?= base_url('login')  ?>">
-                Login
-            </a>
-        </li>
+        <a class="dropdown-item" href="<?= base_url('login')  ?>" class="btn btn-primary btn-icon-split">
+            <span class="icon text-white-50">
+                <i class="fas fa-fw fa-person-to-portal"></i>
+            </span>
+            <span class="text">Login</span>
+        </a>
     </ul>
 </nav>

@@ -18,17 +18,21 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Dashboard Kemiskinan',
-            'total' => $this->grafikModel->getGrafik(),
+            'total' => $this->tabelModel->getTabel(),
+            'total_data' => $this->tabelModel->totalData(),
         ];
         return view('/user/home', $data);
     }
 
-    public function tabel(){
+    public function tabel()
+    {
         $data = [
             'title' => 'Dashboard Kemiskinan',
             'total' => $this->tabelModel->getTabel(),
             'total_data' => $this->tabelModel->totalData()
-       ];
-       return view('/user/tabel', $data);
+        ];
+        return view('/user/tabel', $data);
     }
+
+    
 }

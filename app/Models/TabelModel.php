@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class TabelModel extends Model
 {
-     protected $table = 'data_penduduk';
-     protected $primaryKey = 'penduduk_id';
-     protected $allowedFields = ['penduduk_nama', 'jam_kerja'];
+     protected $table = 'testing';
+     protected $primaryKey = 'id';
+     protected $allowedFields = ['nama', 'umur', 'jam_kerja'];
 
      public function getTabel()
      {
-          return $this->findAll(200);
+          return $this->findAll();
      }
 
      public function totalData()
