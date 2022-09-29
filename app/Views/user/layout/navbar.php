@@ -4,11 +4,11 @@
     </button>
     <ul class="navbar-nav ml-auto">
         <div class="topbar-divider d-none d-sm-block"></div>
-        <a class="dropdown-item" href="<?= base_url('login')  ?>" class="btn btn-primary btn-icon-split">
-            <span class="icon text-white-50">
-                <i class="fas fa-fw fa-person-to-portal"></i>
-            </span>
-            <span class="text">Login</span>
-        </a>
+        <div class="login-button">
+            <a href="<?= base_url('login')  ?>" class="btn btn-custom">
+                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                Login
+            </a>
+        </div>
     </ul>
 </nav>

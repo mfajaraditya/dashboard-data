@@ -18,8 +18,7 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Dashboard Kemiskinan',
-            'total' => $this->tabelModel->getTabel(),
-            'total_data' => $this->tabelModel->totalData(),
+            'total' => $this->grafikModel->getGrafik(),
         ];
         return view('/user/home', $data);
     }
@@ -33,6 +32,4 @@ class Home extends BaseController
         ];
         return view('/user/tabel', $data);
     }
-
-    
 }

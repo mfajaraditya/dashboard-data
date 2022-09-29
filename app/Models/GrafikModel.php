@@ -6,9 +6,9 @@ use CodeIgniter\Model;
 
 class GrafikModel extends Model
 {
-     protected $table = 'data_penduduk';
-     protected $primaryKey = 'penduduk_id';
-     protected $allowedFields = ['penduduk_nama', 'jam_kerja'];
+     protected $table = 'kluster';
+     protected $primaryKey = 'idbdt';
+     protected $allowedFields = ['nama_kab', 'kd_kab', 'persen', 'kluster'];
 
      public function getGrafik()
      {
