@@ -31,18 +31,6 @@
                          <div class="chart-bar">
                               <canvas id="myBarChart"></canvas>
                          </div>
-                         <div>
-                              <?php
-                              if ($total) :
-                                   foreach ($total as $rev) :
-                                        $nama_kab[] = $rev['nama_kab'];
-                                        $kd_kab[] = $rev['kd_kab'];
-                                        $persen[] = $rev['persen'];
-                                        $kluster[] = $rev['kluster'];
-                                   endforeach;
-                              endif;
-                              ?>
-                         </div>
                     </div>
                </div>
           </div>
@@ -51,24 +39,11 @@
 <?= $this->endSection() ?>
 <?= $this->section('js') ?>
 <script>
-     // const labels = [
-     //      "January",
-     //      "February",
-     //      "March",
-     //      "April",
-     //      "May",
-     //      "June",
-     //      "July",
-     //      "August",
-     //      "September",
-     //      "October",
-     // ];
-
-     const labels = <?php echo json_encode($nama_kab) ?>
-     const total_data = <?php echo json_encode($total_tinggi) ?>
-
+     const labels = <?= json_encode($data_kabkota) ?>;
      const data = {
-          labels: labels,
+          labels: labels.map((val) => {
+                    return [val.kotakab]
+               }),
           datasets: [{
                label: 'Tinggi',
                backgroundColor: [
@@ -77,7 +52,9 @@
                borderColor: [
                     "rgb(0, 99, 132)",
                ],
-               data: <?php echo json_encode($persen) ?>
+               data: labels.map((val) => {
+                    return [val.data_tinggi]
+               })
           }, {
                label: 'Menengah',
                backgroundColor: [
@@ -86,7 +63,9 @@
                borderColor: [
                     "rgb(255, 0, 64)",
                ],
-               data: <?php echo json_encode($persen) ?>
+               data: labels.map((val) => {
+                    return [val.data_menengah]
+               })
           }, {
                label: 'Rendah',
                backgroundColor: [
@@ -95,7 +74,9 @@
                borderColor: [
                     "rgb(255, 205, 0)",
                ],
-               data: <?php echo json_encode($persen) ?>
+               data: labels.map((val) => {
+                    return [val.data_rendah]
+               })
           }],
      };
 
@@ -104,6 +85,7 @@
           data: data,
           options: {
                maintainAspectRatio: false,
+               indexAxis: 'x',
                layout: {
                     padding: {
                          left: 10,
