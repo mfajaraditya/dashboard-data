@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\GrafikModel;
 use App\Models\UserModel;
 
 class Login extends BaseController
@@ -11,6 +12,7 @@ class Login extends BaseController
      public function __construct()
      {
           $this->userModel = new UserModel();
+          $this->grafikModel = new GrafikModel();
      }
      public function index()
      {
@@ -51,8 +53,31 @@ class Login extends BaseController
 
      public function logout()
      {
+          $data = [
+               'title' => 'Dashboard Kemiskinan',
+               "data_kabkota" => [
+                   [
+                       "kotakab" => "KABUPATEN BARITO KUALA",
+                       'data_tinggi' => $this->grafikModel->tinggiBatola(),
+                       'data_menengah' => $this->grafikModel->menengahBatola(),
+                       'data_rendah' => $this->grafikModel->rendahBatola(),
+                   ],
+                   [
+                       "kotakab" => "KABUPATEN HULU SUNGAI UTARA",
+                       'data_tinggi' => $this->grafikModel->tinggiHsu(),
+                       'data_menengah' => $this->grafikModel->menengahHsu(),
+                       'data_rendah' => $this->grafikModel->rendahHsu(),
+                   ],
+                   [
+                       "kotakab" => "KABUPATEN TANAH BUMBU",
+                       'data_tinggi' => $this->grafikModel->tinggiTanbu(),
+                       'data_menengah' => $this->grafikModel->menengahTanbu(),
+                       'data_rendah' => $this->grafikModel->rendahTanbu(),
+                   ]
+               ],
+           ];
           $session = session();
           $session->destroy();
-          return view('/user/home');
+          return view('/user/home', $data);
      }
 }

@@ -9,9 +9,39 @@ class GrafikModel extends Model
      protected $table = 'kluster_utama';
      protected $primaryKey = 'idbdt';
      protected $allowedFields = ['nama_kab', 'total_nilai', 'kluster'];
+     
      public function getGrafik()
      {
           return $this->findAll(5);
+     }
+
+     public function totalData()
+     {
+          return $this->countAll();
+     }
+
+     public function dataTinggi()
+     {
+          $builder = $this->db->table('kluster_tinggi');
+          $builder->like('kluster', 'Tinggi');
+          $query = $builder->countAllResults();
+          return $query;
+     }
+
+     public function dataMenengah()
+     {
+          $builder = $this->db->table('kluster_menengah');
+          $builder->like('kluster', 'Menengah');
+          $query = $builder->countAllResults();
+          return $query;
+     }
+
+     public function dataRendah()
+     {
+          $builder = $this->db->table('kluster_rendah');
+          $builder->like('kluster', 'Rendah');
+          $query = $builder->countAllResults();
+          return $query;
      }
 
      public function tinggiBatola()
@@ -94,10 +124,4 @@ class GrafikModel extends Model
           $query = $builder->countAllResults();
           return $query;
      }
-
-
-     // public function totalData()
-     // {
-     //      return $this->countAll();
-     // }
 }

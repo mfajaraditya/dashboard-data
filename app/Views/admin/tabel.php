@@ -61,7 +61,7 @@
                                         <div class="col mr-2">
                                              <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                   Sangat Miskin</div>
-                                             <div class="h5 mb-0 font-weight-bold text-gray-800">7000</div>
+                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $data_rendah; ?></div>
                                         </div>
                                         <div class="col-auto">
                                              <i class="fas fa-arrow-down fa-2x text-gray-300"></i>
@@ -79,7 +79,7 @@
                                         <div class="col mr-2">
                                              <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                   Miskin Menengah</div>
-                                             <div class="h5 mb-0 font-weight-bold text-gray-800">80000</div>
+                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $data_menengah; ?></div>
                                         </div>
                                         <div class="col-auto">
                                              <i class="fas fa-arrow-right fa-2x text-gray-300"></i>
@@ -97,7 +97,7 @@
                                         <div class="col mr-2">
                                              <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                   Tidak Miskin</div>
-                                             <div class="h5 mb-0 font-weight-bold text-gray-800">20000</div>
+                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $data_tinggi; ?></div>
                                         </div>
                                         <div class="col-auto">
                                              <i class="fas fa-arrow-up fa-2x text-gray-300"></i>
@@ -122,38 +122,31 @@
                <thead>
                     <tr>
                          <th scope="col">No.</th>
-                         <th scope="col">Nama</th>
-                         <th scope="col">Umur</th>
-                         <th scope="col">Jam Kerja</th>
-                         <th scope="col">Aksi</th>
+                         <th scope="col">Nama Kabupaten</th>
+                         <th scope="col">Data Tinggi</th>
+                         <th scope="col">Data Menengah</th>
+                         <th scope="col">Data Rendah</th>
                     </tr>
                </thead>
                <tbody>
                     <tr>
                          <?php $i = 1; ?>
-                         <?php foreach ($total as $t) : ?>
+                         <?php foreach ($data_kabkota as $t) : ?>
                               <th scope="row"><?= $i++; ?></th>
-                              <td><?= $t['nama']; ?></td>
-                              <td><?= $t['umur']; ?></td>
-                              <td><?= $t['jam_kerja']; ?></td>
-                              <td><a href="<?= base_url('admin/update') . '/' . $t['id']; ?>">
-                                        <i class="fas fa-fw fa-pen" id="edit"></i>
-                                   </a>
-                                   |
-                                   <a href="<?= base_url('admin/delete') . '/' . $t['id']; ?>">
-                                        <i class="fas fa-fw fa-trash" id="delete"></i>
-                                   </a>
-                              </td>
+                              <td><?= $t['kotakab']; ?></td>
+                              <td><?= $t['data_tinggi']; ?></td>
+                              <td><?= $t['data_menengah']; ?></td>
+                              <td><?= $t['data_rendah']; ?></td>
                     </tr>
                <?php endforeach; ?>
                </tbody>
                <tfoot>
                     <tr>
                          <th scope="col">No.</th>
-                         <th scope="col">Nama</th>
-                         <th scope="col">Umur</th>
-                         <th scope="col">Jam Kerja</th>
-                         <th scope="col">Aksi</th>
+                         <th scope="col">Nama Kabupaten</th>
+                         <th scope="col">Data Tinggi</th>
+                         <th scope="col">Data Menengah</th>
+                         <th scope="col">Data Rendah</th>
                     </tr>
                </tfoot>
           </table>
