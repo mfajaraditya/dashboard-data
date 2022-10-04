@@ -48,7 +48,17 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Data Jenis Lantai',
-
+            'lantai0' => $this->chartModel->jenis_lantai_batola1(),
+            'lantai1' => $this->chartModel->jenis_lantai_batola1(),
+            'lantai2' => $this->chartModel->jenis_lantai_batola2(),
+            'lantai3' => $this->chartModel->jenis_lantai_batola3(),
+            'lantai4' => $this->chartModel->jenis_lantai_batola4(),
+            'lantai5' => $this->chartModel->jenis_lantai_batola5(),
+            'lantai6' => $this->chartModel->jenis_lantai_batola6(),
+            'lantai7' => $this->chartModel->jenis_lantai_batola7(),
+            'lantai8' => $this->chartModel->jenis_lantai_batola8(),
+            'lantai9' => $this->chartModel->jenis_lantai_batola9(),
+            'lantai10' => $this->chartModel->jenis_lantai_batola10(),
             'data_kabkota' => [
                 [
                     'kotakab' => "KABUPATEN BARITO KUALA",
@@ -110,6 +120,17 @@ class Home extends BaseController
             'data_kabkota' => [
                 [
                     'kotakab' => 'KABUPATEN BARITO KUALA',
+                    'indikator' => [
+                        'Tidak Diketahui','Tembok','Plesteran anyaman bambu/kawat','Kayu','Anyaman bambu','Batang Kayu','Bambu','Lainnya',
+                    ],
+                    // 'indikator0' => 'Tidak Diketahui',
+                    // 'indikator1' => 'Tembok',
+                    // 'indikator2' => 'Plesteran anyaman bambu/kawat',
+                    // 'indikator3' => 'Kayu',
+                    // 'indikator4' => 'Anyaman bambu',
+                    // 'indikator5' => 'Batang Kayu',
+                    // 'indikator6' => 'Bambu',
+                    // 'indikator7' => 'Lainnya',
                     'data_dinding0' => $this->chartModel->jenis_dinding_batola0(),
                     'data_dinding1' => $this->chartModel->jenis_dinding_batola1(),
                     'data_dinding2' => $this->chartModel->jenis_dinding_batola2(),

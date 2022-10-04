@@ -111,14 +111,6 @@
           },
      };
 
-     const configLine = {
-          type: "line",
-          data,
-          options: {
-               maintainAspectRatio: false,
-          },
-     };
-
      const myBarChart = new Chart(document.getElementById("myBarChart"), config);
 </script>
 <?= $this->endSection() ?>
