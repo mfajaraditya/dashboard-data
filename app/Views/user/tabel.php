@@ -2,10 +2,10 @@
 
 <?= $this->section('css') ?>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 <?= $this->endSection() ?>
 
 <?= $this->section('js') ?>
-<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.js"></script>
 <script src="<?= base_url('plugins/datatables/jquery.dataTables.min.js'); ?>"></script>
 <script src="<?= base_url('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js'); ?>"></script>
 <script src="<?= base_url('plugins/datatables-responsive/js/dataTables.responsive.min.js'); ?>"></script>
@@ -120,9 +120,9 @@
                     <tr>
                          <th scope="col">No.</th>
                          <th scope="col">Nama Kabupaten</th>
-                         <th scope="col">Data Tinggi</th>
-                         <th scope="col">Data Menengah</th>
-                         <th scope="col">Data Rendah</th>
+                         <th scope="col">Sangat Miskin</th>
+                         <th scope="col">Miskin Menengah</th>
+                         <th scope="col">Tidak Miskin</th>
                     </tr>
                </thead>
                <tbody>
@@ -139,10 +139,11 @@
                </tbody>
                <tfoot>
                     <tr>
-                         <th scope="col">No.</th>
-                         <th scope="col">Nama</th>
-                         <th scope="col">Umur</th>
-                         <th scope="col">Jam Kerja</th>
+                    <th scope="col">No.</th>
+                         <th scope="col">Nama Kabupaten</th>
+                         <th scope="col">Sangat Miskin</th>
+                         <th scope="col">Miskin Menengah</th>
+                         <th scope="col">Tidak Miskin</th>
                     </tr>
                </tfoot>
           </table>

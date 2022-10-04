@@ -15,6 +15,10 @@ $routes->set404Override();
 
 $routes->get('/user/dashboard', 'Home::index');
 $routes->get('/user/tabel', 'Home::tabel');
+$routes->get('/user/indikator/jenis_dinding', 'Home::jenisDinding');
+
+
+
 $routes->add('/login', 'Login::index');
 $routes->post('/login/auth', 'Login::auth');
 $routes->get('/login/logout', 'Login::logout');

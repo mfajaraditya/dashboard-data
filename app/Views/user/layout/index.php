@@ -16,11 +16,8 @@
 <body id="page-top">
 <div id="wrapper">
     <ul class="navbar-nav bg-gradient-custom sidebar sidebar-dark accordion" id="accordionSidebar">
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
-            <div class="sidebar-brand-icon rotate-n-15">
-                <i class="fas fa-laugh-wink"></i>
-            </div>
-            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/user/dashboard">
+            <div class="sidebar-brand-text mx-3">Dashboard</div>
         </a>
         <?= $this->include('user/layout/sidebar') ?>
         <div class="text-center d-none d-md-inline">

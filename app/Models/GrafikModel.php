@@ -9,11 +9,6 @@ class GrafikModel extends Model
      protected $table = 'kluster_utama';
      protected $primaryKey = 'idbdt';
      protected $allowedFields = ['nama_kab', 'total_nilai', 'kluster'];
-     
-     public function getGrafik()
-     {
-          return $this->findAll(5);
-     }
 
      public function totalData()
      {
@@ -22,7 +17,7 @@ class GrafikModel extends Model
 
      public function dataTinggi()
      {
-          $builder = $this->db->table('kluster_tinggi');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Tinggi');
           $query = $builder->countAllResults();
           return $query;
@@ -30,7 +25,7 @@ class GrafikModel extends Model
 
      public function dataMenengah()
      {
-          $builder = $this->db->table('kluster_menengah');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Menengah');
           $query = $builder->countAllResults();
           return $query;
@@ -38,7 +33,7 @@ class GrafikModel extends Model
 
      public function dataRendah()
      {
-          $builder = $this->db->table('kluster_rendah');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Rendah');
           $query = $builder->countAllResults();
           return $query;
@@ -46,7 +41,7 @@ class GrafikModel extends Model
 
      public function tinggiBatola()
      {
-          $builder = $this->db->table('kluster_tinggi');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Tinggi');
           $builder->like('nama_kab', 'KABUPATEN BARITO KUALA');
           $query = $builder->countAllResults();
@@ -55,7 +50,7 @@ class GrafikModel extends Model
 
      public function menengahBatola()
      {
-          $builder = $this->db->table('kluster_menengah');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Menengah');
           $builder->like('nama_kab', 'KABUPATEN BARITO KUALA');
           $query = $builder->countAllResults();
@@ -64,7 +59,7 @@ class GrafikModel extends Model
 
      public function rendahBatola()
      {
-          $builder = $this->db->table('kluster_rendah');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Rendah');
           $builder->like('nama_kab', 'KABUPATEN BARITO KUALA');
           $query = $builder->countAllResults();
@@ -73,7 +68,7 @@ class GrafikModel extends Model
 
      public function tinggiHsu()
      {
-          $builder = $this->db->table('kluster_tinggi');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Tinggi');
           $builder->like('nama_kab', 'KABUPATEN HULU SUNGAI UTARA');
           $query = $builder->countAllResults();
@@ -82,7 +77,7 @@ class GrafikModel extends Model
 
      public function menengahHsu()
      {
-          $builder = $this->db->table('kluster_menengah');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Menengah');
           $builder->like('nama_kab', 'KABUPATEN HULU SUNGAI UTARA');
           $query = $builder->countAllResults();
@@ -91,7 +86,7 @@ class GrafikModel extends Model
 
      public function rendahHsu()
      {
-          $builder = $this->db->table('kluster_rendah');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Rendah');
           $builder->like('nama_kab', 'KABUPATEN HULU SUNGAI UTARA');
           $query = $builder->countAllResults();
@@ -100,7 +95,7 @@ class GrafikModel extends Model
 
      public function tinggiTanbu()
      {
-          $builder = $this->db->table('kluster_tinggi');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Tinggi');
           $builder->like('nama_kab', 'KABUPATEN TANAH BUMBU');
           $query = $builder->countAllResults();
@@ -109,7 +104,7 @@ class GrafikModel extends Model
 
      public function menengahTanbu()
      {
-          $builder = $this->db->table('kluster_menengah');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Menengah');
           $builder->like('nama_kab', 'KABUPATEN TANAH BUMBU');
           $query = $builder->countAllResults();
@@ -118,7 +113,7 @@ class GrafikModel extends Model
 
      public function rendahTanbu()
      {
-          $builder = $this->db->table('kluster_rendah');
+          $builder = $this->db->table('kluster_utama');
           $builder->like('kluster', 'Rendah');
           $builder->like('nama_kab', 'KABUPATEN TANAH BUMBU');
           $query = $builder->countAllResults();
