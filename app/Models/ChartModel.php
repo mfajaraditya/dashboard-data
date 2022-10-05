@@ -29,13 +29,6 @@ class ChartModel extends Model
           return $query;
      }
 
-     public function lantai0()
-     {
-          $builder = $this->db->table('data_keluarga_fasilitas');
-          $builder->like('jenis_lantai_id', '0');
-          $query = $builder->countAllResults();
-          return $query;
-     }
      public function lantai1()
      {
           $builder = $this->db->table('data_keluarga_fasilitas');
@@ -580,14 +573,6 @@ class ChartModel extends Model
           return $query;
      }
 
-     public function jenisKloset0()
-     {
-          $builder = $this->db->table('data_keluarga_fasilitas');
-          $builder->like('jenis_kloset_id', '0');
-          $query = $builder->countAllResults();
-          return $query;
-     }
-
      public function jenisKloset1()
      {
           $builder = $this->db->table('data_keluarga_fasilitas');
@@ -625,14 +610,6 @@ class ChartModel extends Model
           $builder = $this->db->table('data_keluarga_fasilitas');
           $builder->select('kondisi_atap_id');
           $query = $builder->countALlResults();
-          return $query;
-     }
-
-     public function kondisiAtap0()
-     {
-          $builder = $this->db->table('data_keluarga_fasilitas');
-          $builder->like('kondisi_atap_id', '12');
-          $query = $builder->countAllResults();
           return $query;
      }
 

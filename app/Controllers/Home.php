@@ -22,19 +22,19 @@ class Home extends BaseController
             'title' => 'Dashboard Kemiskinan',
             "data_kabkota" => [
                 [
-                    "kotakab" => "KABUPATEN BARITO KUALA",
+                    "kabkota" => "KABUPATEN BARITO KUALA",
                     'data_tinggi' => $this->grafikModel->tinggiBatola(),
                     'data_menengah' => $this->grafikModel->menengahBatola(),
                     'data_rendah' => $this->grafikModel->rendahBatola(),
                 ],
                 [
-                    "kotakab" => "KABUPATEN HULU SUNGAI UTARA",
+                    "kabkota" => "KABUPATEN HULU SUNGAI UTARA",
                     'data_tinggi' => $this->grafikModel->tinggiHsu(),
                     'data_menengah' => $this->grafikModel->menengahHsu(),
                     'data_rendah' => $this->grafikModel->rendahHsu(),
                 ],
                 [
-                    "kotakab" => "KABUPATEN TANAH BUMBU",
+                    "kabkota" => "KABUPATEN TANAH BUMBU",
                     'data_tinggi' => $this->grafikModel->tinggiTanbu(),
                     'data_menengah' => $this->grafikModel->menengahTanbu(),
                     'data_rendah' => $this->grafikModel->rendahTanbu(),
@@ -48,6 +48,7 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Data Jenis Lantai',
+            'total_data' => $this->chartModel->totaldataLantai(),
             'lantai0' => $this->chartModel->jenis_lantai_batola1(),
             'lantai1' => $this->chartModel->jenis_lantai_batola1(),
             'lantai2' => $this->chartModel->jenis_lantai_batola2(),
@@ -61,7 +62,7 @@ class Home extends BaseController
             'lantai10' => $this->chartModel->jenis_lantai_batola10(),
             'data_kabkota' => [
                 [
-                    'kotakab' => "KABUPATEN BARITO KUALA",
+                    'kabkota' => "KABUPATEN BARITO KUALA",
                     'data_lantai1' => $this->chartModel->jenis_lantai_batola1(),
                     'data_lantai2' => $this->chartModel->jenis_lantai_batola2(),
                     'data_lantai3' => $this->chartModel->jenis_lantai_batola3(),
@@ -74,7 +75,7 @@ class Home extends BaseController
                     'data_lantai10' => $this->chartModel->jenis_lantai_batola10(),
                 ],
                 [
-                    'kotakab' => "KABUPATEN HULU SUNGAI SELATAN",
+                    'kabkota' => "KABUPATEN HULU SUNGAI SELATAN",
                     'data_lantai1' => $this->chartModel->jenis_lantai_hsu1(),
                     'data_lantai2' => $this->chartModel->jenis_lantai_hsu2(),
                     'data_lantai3' => $this->chartModel->jenis_lantai_hsu3(),
@@ -87,7 +88,7 @@ class Home extends BaseController
                     'data_lantai10' => $this->chartModel->jenis_lantai_hsu10(),
                 ],
                 [
-                    'kotakab' => "KABUPATEN TANAH BUMBU",
+                    'kabkota' => "KABUPATEN TANAH BUMBU",
                     'data_lantai1' => $this->chartModel->jenis_lantai_tanbu1(),
                     'data_lantai2' => $this->chartModel->jenis_lantai_tanbu2(),
                     'data_lantai3' => $this->chartModel->jenis_lantai_tanbu3(),
@@ -119,7 +120,7 @@ class Home extends BaseController
             'dinding7' => $this->chartModel->dinding7(),
             'data_kabkota' => [
                 [
-                    'kotakab' => 'KABUPATEN BARITO KUALA',
+                    'kabkota' => 'KABUPATEN BARITO KUALA',
                     'indikator' => [
                         'Tidak Diketahui','Tembok','Plesteran anyaman bambu/kawat','Kayu','Anyaman bambu','Batang Kayu','Bambu','Lainnya',
                     ],
@@ -141,7 +142,7 @@ class Home extends BaseController
                     'data_dinding7' => $this->chartModel->jenis_dinding_batola7(),
                 ],
                 [
-                    'kotakab' => 'KABUPATEN HULU SUNGAI UTARA',
+                    'kabkota' => 'KABUPATEN HULU SUNGAI UTARA',
                     'data_dinding0' => $this->chartModel->jenis_dinding_hsu0(),
                     'data_dinding1' => $this->chartModel->jenis_dinding_hsu1(),
                     'data_dinding2' => $this->chartModel->jenis_dinding_hsu2(),
@@ -152,7 +153,7 @@ class Home extends BaseController
                     'data_dinding7' => $this->chartModel->jenis_dinding_hsu7(),
                 ],
                 [
-                    'kotakab' => 'KABUPATEN TANAH BUMBU',
+                    'kabkota' => 'KABUPATEN TANAH BUMBU',
                     'data_dinding0' => $this->chartModel->jenis_dinding_tanbu0(),
                     'data_dinding1' => $this->chartModel->jenis_dinding_tanbu1(),
                     'data_dinding2' => $this->chartModel->jenis_dinding_tanbu2(),
@@ -171,6 +172,11 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Data Fasilitas BAB',
+            'total_data' => $this->chartModel->totalfasilitasBab(),
+            'fasilitas1' => $this->chartModel->fasilitasBab1(),
+            'fasilitas2' => $this->chartModel->fasilitasBab2(),
+            'fasilitas3' => $this->chartModel->fasilitasBab3(),
+            'fasilitas4' => $this->chartModel->fasilitasBab4(),
             'data_kabkota' => [
                 [
                     'kabkota' => 'KABUPATEN BARITO KUALA',
@@ -201,6 +207,9 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Data Sumber Penerangan',
+            'total_data' => $this->chartModel->totalsumberPenerangan(),
+            'sumberPenerangan1' => $this->chartModel->sumberPenerangan1(),
+            'sumberPenerangan2' => $this->chartModel->sumberPenerangan2(),
             'data_kabkota' => [
                 [
                     'kabkota' => 'KABUPATEN BARITO KUALA',
@@ -225,6 +234,19 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Data Sumber Air Minum',
+            'total_data' => $this->chartModel->totalsumberAirminum(),
+            'sumberAirminum1' => $this->chartModel->sumberAirminum1(),
+            'sumberAirminum2' => $this->chartModel->sumberAirminum2(),
+            'sumberAirminum3' => $this->chartModel->sumberAirminum3(),
+            'sumberAirminum4' => $this->chartModel->sumberAirminum4(),
+            'sumberAirminum5' => $this->chartModel->sumberAirminum5(),
+            'sumberAirminum6' => $this->chartModel->sumberAirminum6(),
+            'sumberAirminum7' => $this->chartModel->sumberAirminum7(),
+            'sumberAirminum8' => $this->chartModel->sumberAirminum8(),
+            'sumberAirminum9' => $this->chartModel->sumberAirminum9(),
+            'sumberAirminum10' => $this->chartModel->sumberAirminum10(),
+            'sumberAirminum11' => $this->chartModel->sumberAirminum11(),
+            'sumberAirminum12' => $this->chartModel->sumberAirminum12(),
             'data_kabkota' => [
                 [
                     'kabkota' => 'KABUPATEN BARITO KUALA',
@@ -279,6 +301,16 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Data Bahan Bakar Masak',
+            'total_data' => $this->chartModel->totalbahanbakarMasak(),
+            'bahanbakarMasak1' => $this->chartModel->bahanbakarMasak1(),
+            'bahanbakarMasak2' => $this->chartModel->bahanbakarMasak2(),
+            'bahanbakarMasak3' => $this->chartModel->bahanbakarMasak3(),
+            'bahanbakarMasak4' => $this->chartModel->bahanbakarMasak4(),
+            'bahanbakarMasak5' => $this->chartModel->bahanbakarMasak5(),
+            'bahanbakarMasak6' => $this->chartModel->bahanbakarMasak6(),
+            'bahanbakarMasak7' => $this->chartModel->bahanbakarMasak7(),
+            'bahanbakarMasak8' => $this->chartModel->bahanbakarMasak8(),
+            'bahanbakarMasak9' => $this->chartModel->bahanbakarMasak9(),
             'data_kabkota' => [
                 [
                     'kabkota' => 'KABUPATEN BARITO KUALA',
@@ -324,6 +356,13 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Data Daya Listrik',
+            'total_data' => $this->chartModel->totalDayalistrik(),
+            'dayaListrik1' => $this->chartModel->dayaListrik1(),
+            'dayaListrik2' => $this->chartModel->dayaListrik2(),
+            'dayaListrik3' => $this->chartModel->dayaListrik3(),
+            'dayaListrik4' => $this->chartModel->dayaListrik4(),
+            'dayaListrik5' => $this->chartModel->dayaListrik5(),
+            'dayaListrik6' => $this->chartModel->dayaListrik6(),
             'data_kabkota' => [
                 [
                     'kabkota' => 'KABUPATEN BARITO KUALA',
@@ -360,6 +399,17 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Data Jenis Atap',
+            'total_data' => $this->chartModel->totaljenisAtap(),
+            'jenisAtap1' => $this->chartModel->jenisAtap1(),
+            'jenisAtap2' => $this->chartModel->jenisAtap2(),
+            'jenisAtap3' => $this->chartModel->jenisAtap3(),
+            'jenisAtap4' => $this->chartModel->jenisAtap4(),
+            'jenisAtap5' => $this->chartModel->jenisAtap5(),
+            'jenisAtap6' => $this->chartModel->jenisAtap6(),
+            'jenisAtap7' => $this->chartModel->jenisAtap7(),
+            'jenisAtap8' => $this->chartModel->jenisAtap8(),
+            'jenisAtap9' => $this->chartModel->jenisAtap9(),
+            'jenisAtap10' => $this->chartModel->jenisAtap10(),
             'data_kabkota' => [
                 [
                     'kabkota' => 'KABUPATEN BARITO KUALA',
@@ -408,6 +458,11 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Data Jenis Kloset',
+            'total_data' => $this->chartModel->totaljenisKloset(),
+            'jenisKloset1' => $this->chartModel->jenisKloset1(),
+            'jenisKloset2' => $this->chartModel->jenisKloset2(),
+            'jenisKloset3' => $this->chartModel->jenisKloset3(),
+            'jenisKloset4' => $this->chartModel->jenisKloset4(),
             'data_kabkota' => [
                 [
                     'kabkota' => 'KABUPATEN BARITO KUALA',
@@ -438,6 +493,9 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Data Kondisi Atap',
+            'total_data' => $this->chartModel->totalkondisiAtap(),
+            'kondisiAtap1' => $this->chartModel->kondisiAtap1(),
+            'kondisiAtap2' => $this->chartModel->kondisiAtap2(),
             'data_kabkota' => [
                 [
                     'kabkota' => 'KABUPATEN BARITO KUALA',

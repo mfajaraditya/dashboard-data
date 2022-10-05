@@ -12,16 +12,16 @@ $uri = service('uri');
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Indeks:</h6>
             <a class="collapse-item" href="<?= base_url('user/dashboard') ?>">Total Data</a>
-            <a class="collapse-item" href="<?= base_url('user/dashboard') ?>">Jenis Lantai</a>
+            <a class="collapse-item" href="<?= base_url('user/indikator/jenis_lantai') ?>">Jenis Lantai</a>
             <a class="collapse-item" href="<?= base_url('user/indikator/jenis_dinding') ?>">Jenis Dinding</a>
-            <a class="collapse-item" href="#">Fasilitas MCK</a>
-            <a class="collapse-item" href="#">Sumber Penerangan</a>
-            <a class="collapse-item" href="#">Sumber Air Minum</a>
-            <a class="collapse-item" href="#">Bahan Bakar Memasak</a>
-            <a class="collapse-item" href="#">Daya Listrik</a>
-            <a class="collapse-item" href="#">Jenis Atap</a>
-            <a class="collapse-item" href="#">Jenis Kloset</a>
-            <a class="collapse-item" href="#">Kondisi Atap</a>
+            <a class="collapse-item" href="<?= base_url('user/indikator/fasilitas_bab') ?>">Fasilitas BAB</a>
+            <a class="collapse-item" href="<?= base_url('user/indikator/sumber_penerangan') ?>">Sumber Penerangan</a>
+            <a class="collapse-item" href="<?= base_url('user/indikator/sumber_airminum') ?>">Sumber Air Minum</a>
+            <a class="collapse-item" href="<?= base_url('user/indikator/bahanbakar_masak') ?>">Bahan Bakar Memasak</a>
+            <a class="collapse-item" href="<?= base_url('user/indikator/daya_listrik') ?>">Daya Listrik</a>
+            <a class="collapse-item" href="<?= base_url('user/indikator/jenis_atap') ?>">Jenis Atap</a>
+            <a class="collapse-item" href="<?= base_url('user/indikator/jenis_kloset') ?>">Jenis Kloset</a>
+            <a class="collapse-item" href="<?= base_url('user/indikator/kondisi_atap') ?>">Kondisi Atap</a>
 
         </div>
     </div>

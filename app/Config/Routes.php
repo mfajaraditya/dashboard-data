@@ -16,6 +16,15 @@ $routes->set404Override();
 $routes->get('/user/dashboard', 'Home::index');
 $routes->get('/user/tabel', 'Home::tabel');
 $routes->get('/user/indikator/jenis_dinding', 'Home::jenisDinding');
+$routes->get('/user/indikator/jenis_lantai', 'Home::jenisLantai');
+$routes->get('/user/indikator/fasilitas_bab', 'Home::fasilitasBab');
+$routes->get('/user/indikator/sumber_penerangan', 'Home::sumberPenerangan');
+$routes->get('/user/indikator/sumber_airminum', 'Home::sumberAirminum');
+$routes->get('/user/indikator/bahanbakar_masak', 'Home::bahanbakarMasak');
+$routes->get('/user/indikator/daya_listrik', 'Home::dayaListrik');
+$routes->get('/user/indikator/jenis_atap', 'Home::jenisAtap');
+$routes->get('/user/indikator/jenis_kloset', 'Home::jenisKloset');
+$routes->get('/user/indikator/kondisi_atap', 'Home::kondisiAtap');
 
 
 
