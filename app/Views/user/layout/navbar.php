@@ -1,14 +1,21 @@
-<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-        <i class="fa fa-bars"></i>
-    </button>
-    <ul class="navbar-nav ml-auto">
-        <div class="topbar-divider d-none d-sm-block"></div>
-        <div class="login-button">
-            <a href="<?= base_url('login')  ?>" class="btn btn-custom">
-                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                Login
-            </a>
-        </div>
-    </ul>
-</nav>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+          <div class="container px-4 px-lg-5">
+               <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+               <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                         <li class="nav-item">
+                              <a class="nav-link" href="#about">About</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#services">Services</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#portofolio">Portofolio</a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </nav>

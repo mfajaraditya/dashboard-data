@@ -75,7 +75,7 @@ class Home extends BaseController
                     'data_lantai10' => $this->chartModel->jenis_lantai_batola10(),
                 ],
                 [
-                    'kabkota' => "KABUPATEN HULU SUNGAI SELATAN",
+                    'kabkota' => "KABUPATEN HULU SUNGAI UTARA",
                     'data_lantai1' => $this->chartModel->jenis_lantai_hsu1(),
                     'data_lantai2' => $this->chartModel->jenis_lantai_hsu2(),
                     'data_lantai3' => $this->chartModel->jenis_lantai_hsu3(),
@@ -186,7 +186,7 @@ class Home extends BaseController
                     'fasilitas_bab4' =>$this->chartModel->fasilitas_bab_batola4(),
                 ],
                 [
-                    'kabkota' => 'KABUPATEN HULU SUNGAI SELATAN',
+                    'kabkota' => 'KABUPATEN HULU SUNGAI UTARA',
                     'fasilitas_bab1' => $this->chartModel->fasilitas_bab_hsu1(),
                     'fasilitas_bab2' => $this->chartModel->fasilitas_bab_hsu2(),
                     'fasilitas_bab3' => $this->chartModel->fasilitas_bab_hsu3(),
@@ -217,7 +217,7 @@ class Home extends BaseController
                     'sumber_penerangan2' => $this->chartModel->sumber_penerangan_batola2(),
                 ],
                 [
-                    'kabkota' => 'KABUPATEN HULU SUNGAI SELATAN',
+                    'kabkota' => 'KABUPATEN HULU SUNGAI UTARA',
                     'sumber_penerangan1' => $this->chartModel->sumber_penerangan_hsu1(),
                     'sumber_penerangan2' => $this->chartModel->sumber_penerangan_hsu2(),
                 ],
@@ -264,7 +264,7 @@ class Home extends BaseController
                     'sumber_airminum12' => $this->chartModel->sumber_airminum_batola12(),
                 ],
                 [
-                    'kabkota' => 'KABUPATEN HULU SUNGAI SELATAN',
+                    'kabkota' => 'KABUPATEN HULU SUNGAI UTARA',
                     'sumber_airminum1' => $this->chartModel->sumber_airminum_hsu1(),
                     'sumber_airminum2' => $this->chartModel->sumber_airminum_hsu2(),
                     'sumber_airminum3' => $this->chartModel->sumber_airminum_hsu3(),
@@ -325,7 +325,7 @@ class Home extends BaseController
                     'bahanbakar_masak9' => $this->chartModel->bahanbakar_masak_batola9(),
                 ],
                 [
-                    'kabkota' => 'KABUPATEN HULU SUNGAI SELATAN',
+                    'kabkota' => 'KABUPATEN HULU SUNGAI UTARA',
                     'bahanbakar_masak1' => $this->chartModel->bahanbakar_masak_hsu1(),
                     'bahanbakar_masak2' => $this->chartModel->bahanbakar_masak_hsu2(),
                     'bahanbakar_masak3' => $this->chartModel->bahanbakar_masak_hsu3(),
@@ -374,7 +374,7 @@ class Home extends BaseController
                     'daya_listrik6' => $this->chartModel->daya_listrik_batola6(),
                 ],
                 [
-                    'kabkota' => 'KABUPATEN HULU SUNGAI SELATAN',
+                    'kabkota' => 'KABUPATEN HULU SUNGAI UTARA',
                     'daya_listrik1' => $this->chartModel->daya_listrik_hsu1(),
                     'daya_listrik2' => $this->chartModel->daya_listrik_hsu2(),
                     'daya_listrik3' => $this->chartModel->daya_listrik_hsu3(),
@@ -425,7 +425,7 @@ class Home extends BaseController
                     'jenis_atap10' => $this->chartModel->jenis_atap_batola10(),
                 ],
                 [
-                    'kabkota' => 'KABUPATEN HULU SUNGAI SELATAN',
+                    'kabkota' => 'KABUPATEN HULU SUNGAI UTARA',
                     'jenis_atap1' => $this->chartModel->jenis_atap_hsu1(),
                     'jenis_atap2' => $this->chartModel->jenis_atap_hsu2(),
                     'jenis_atap3' => $this->chartModel->jenis_atap_hsu3(),
@@ -472,7 +472,7 @@ class Home extends BaseController
                     'jenis_kloset4' => $this->chartModel->jenis_kloset_batola4(),
                 ],
                 [
-                    'kabkota' => 'KABUPATEN HULU SUNGAI SELATAN',
+                    'kabkota' => 'KABUPATEN HULU SUNGAI UTARA',
                     'jenis_kloset1' => $this->chartModel->jenis_kloset_hsu1(),
                     'jenis_kloset2' => $this->chartModel->jenis_kloset_hsu2(),
                     'jenis_kloset3' => $this->chartModel->jenis_kloset_hsu3(),
@@ -503,7 +503,7 @@ class Home extends BaseController
                     'kondisi_atap2' => $this->chartModel->kondisi_atap_batola2(),
                 ],
                 [
-                    'kabkota' => 'KABUPATEN HULU SUNGAI SELATAN',
+                    'kabkota' => 'KABUPATEN HULU SUNGAI UTARA',
                     'kondisi_atap1' => $this->chartModel->kondisi_atap_hsu1(),
                     'kondisi_atap2' => $this->chartModel->kondisi_atap_hsu2(),
                 ],
