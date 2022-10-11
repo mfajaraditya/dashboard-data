@@ -39,6 +39,30 @@ class GrafikModel extends Model
           return $query;
      }
 
+     public function totalBatola()
+     {
+          $builder = $this->db->table('kluster_utama');
+          $builder->like('nama_kab', 'KABUPATEN BARITO KUALA');
+          $query = $builder->countAllResults();
+          return $query;
+     }
+
+     public function totalHsu()
+     {
+          $builder = $this->db->table('kluster_utama');
+          $builder->like('nama_kab', 'KABUPATEN HULU SUNGAI UTARA');
+          $query = $builder->countAllResults();
+          return $query;
+     }
+
+     public function totalTanbu()
+     {
+          $builder = $this->db->table('kluster_utama');
+          $builder->like('nama_kab', 'KABUPATEN TANAH BUMBU');
+          $query = $builder->countAllResults();
+          return $query;
+     }
+
      public function tinggiBatola()
      {
           $builder = $this->db->table('kluster_utama');

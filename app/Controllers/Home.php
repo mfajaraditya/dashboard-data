@@ -532,22 +532,25 @@ class Home extends BaseController
                     'data_tinggi' => $this->grafikModel->tinggiBatola(),
                     'data_menengah' => $this->grafikModel->menengahBatola(),
                     'data_rendah' => $this->grafikModel->rendahBatola(),
+                    'total_data' => $this->grafikModel->totalBatola(),
                 ],
                 [
                     "kotakab" => "KABUPATEN HULU SUNGAI UTARA",
                     'data_tinggi' => $this->grafikModel->tinggiHsu(),
                     'data_menengah' => $this->grafikModel->menengahHsu(),
                     'data_rendah' => $this->grafikModel->rendahHsu(),
+                    'total_data' => $this->grafikModel->totalHsu(),
                 ],
                 [
                     "kotakab" => "KABUPATEN TANAH BUMBU",
                     'data_tinggi' => $this->grafikModel->tinggiTanbu(),
                     'data_menengah' => $this->grafikModel->menengahTanbu(),
                     'data_rendah' => $this->grafikModel->rendahTanbu(),
-                ]
+                    'total_data' => $this->grafikModel->totalTanbu(),
+                ],
             ]
-
         ];
+        // dd($data);
         return view('/user/tabel', $data);
     }
 }

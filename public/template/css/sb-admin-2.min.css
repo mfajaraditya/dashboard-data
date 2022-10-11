@@ -9322,11 +9322,63 @@ a:focus {
 .progress-sm {
   height: 0.5rem;
 }
+.flip {
+  -webkit-transform: scaleX(-1);
+  transform:scaleX(-1);
+}
 .rotate-15 {
   transform: rotate(15deg);
 }
+.rotate-30 {
+  transform: rotate(30deg);
+}
+.rotate-45 {
+  transform: rotate(45deg);
+}
+.rotate-60 {
+  transform: rotate(60deg);
+}
+.rotate-75 {
+  transform: rotate(75deg);
+}
+.rotate-90 {
+  transform: rotate(90deg);
+}
+.rotate-105 {
+  transform: rotate(105deg);
+}
+.rotate-120 {
+  transform: rotate(120deg);
+}
+.rotate-135 {
+  transform: rotate(135deg);
+}
+.rotate-150 {
+  transform: rotate(150deg);
+}
+.rotate-165 {
+  transform: rotate(165deg);
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
 .rotate-n-15 {
   transform: rotate(-15deg);
+}
+.rotate-n-30 {
+  transform: rotate(-30deg);
+}
+.rotate-n-45 {
+  transform: rotate(-45deg);
+}
+.rotate-n-60 {
+  transform: rotate(-60deg);
+}
+.rotate-n-75 {
+  transform: rotate(-75deg);
+}
+.rotate-n-90 {
+  transform: rotate(-90deg);
 }
 .dropdown .dropdown-menu {
   font-size: 0.85rem;

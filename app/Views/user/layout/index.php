@@ -14,15 +14,20 @@
     <link href="<?= base_url('plugins') ?>/fontawesome-free/css/solid.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="<?= base_url('template') ?>/css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
     <title><?= $title; ?></title>
 </head>
 
 <body id="page-top">
     <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion">
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/user/dashboard">
-                <div class="sidebar-brand-text mx-3">Home</div>
+            <a class="sidebar-brand d-flex align-items-center justify-content-center mx-2" href="/user/dashboard">
+                <div class="sidebar-brand-icon">
+                    <i class="fas fa-fw fa-chart-bar"></i>
+                </div>
+            <div class="sidebar-brand-text mx-3">
+                <span>Data Visualization</span>
+            </div>
+                
             </a>
             <?= $this->include('user/layout/sidebar') ?>
             <div class="text-center d-none d-md-inline">

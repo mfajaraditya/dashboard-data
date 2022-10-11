@@ -21,6 +21,7 @@
 <script>
      $(function() {
           $("#example1").DataTable({
+               "searching": false,
                "responsive": false,
                "lengthChange": false,
                "autoWidth": false,
@@ -29,7 +30,6 @@
      });
 </script>
 <?= $this->endSection() ?>
-
 <?= $this->section('content') ?>
 <div class="wrapper">
      <div id="content">
@@ -70,8 +70,6 @@
                               </div>
                          </div>
                     </div>
-
-                    <!-- Earnings (Monthly) Card Example -->
                     <div class="col-xl-3 col-md-6 mb-4">
                          <div class="card border-left-info shadow h-100 py-2">
                               <div class="card-body">
@@ -88,8 +86,6 @@
                               </div>
                          </div>
                     </div>
-
-                    <!-- Pending Requests Card Example -->
                     <div class="col-xl-3 col-md-6 mb-4">
                          <div class="card border-left-warning shadow h-100 py-2">
                               <div class="card-body">
@@ -111,9 +107,7 @@
      </div>
 </div>
 
-
 <div class="card">
-     <!-- /.card-header -->
      <div class="card-body">
           <table id="example1" class="table table-bordered table-striped">
                <thead>
@@ -123,6 +117,7 @@
                          <th scope="col">Sangat Miskin</th>
                          <th scope="col">Miskin Menengah</th>
                          <th scope="col">Tidak Miskin</th>
+                         <th scope="col">Total Data</th>
                     </tr>
                </thead>
                <tbody>
@@ -134,16 +129,18 @@
                               <td><?= $t['data_tinggi']; ?></td>
                               <td><?= $t['data_menengah']; ?></td>
                               <td><?= $t['data_rendah']; ?></td>
+                              <td><?= $t['total_data']; ?></td>
                     </tr>
                <?php endforeach; ?>
                </tbody>
                <tfoot>
                     <tr>
-                    <th scope="col">No.</th>
+                         <th scope="col">No.</th>
                          <th scope="col">Nama Kabupaten</th>
                          <th scope="col">Sangat Miskin</th>
                          <th scope="col">Miskin Menengah</th>
                          <th scope="col">Tidak Miskin</th>
+                         <th scope="col"><?= $total_data; ?></th>
                     </tr>
                </tfoot>
           </table>
