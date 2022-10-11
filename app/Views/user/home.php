@@ -6,24 +6,20 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
      <meta name="description" content="" />
      <meta name="author" content="" />
-     <title>Creative - Start Bootstrap Theme</title>
-     <!-- Favicon-->
-     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-     <!-- Bootstrap Icons-->
+     <title>Visualisasi Data</title>
+     <link rel="icon" type="image/x-icon" href="/img/logo.ico" />
      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-     <!-- Google fonts-->
      <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
      <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type=<!-- SimpleLightbox plugin CSS-->
+     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
      <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-     <!-- Core theme CSS (includes Bootstrap)-->
      <link href="/css/styles.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
-     <!-- Navigation-->
      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
           <div class="container px-4 px-lg-5">
-               <a class="navbar-brand" href="#page-top">Dashboard</a>
+               <a class="navbar-brand" href="#page-top">Data Visualization</a>
                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                </button>
@@ -36,13 +32,12 @@
                               <a class="nav-link" href="#services">Services</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#portofolio">Portofolio</a>
+                              <a class="nav-link" href="#portofolio">Projects</a>
                          </li>
                     </ul>
                </div>
           </div>
      </nav>
-     <!-- Masthead-->
      <header class="masthead">
           <div class="container px-4 px-lg-5 h-100">
                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
@@ -62,7 +57,6 @@
                </div>
           </div>
      </header>
-     <!-- About-->
      <section class="page-section bg-primary" id="about">
           <div class="container px-4 px-lg-5">
                <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -79,7 +73,6 @@
                </div>
           </div>
      </section>
-     <!-- Services-->
      <section class="page-section" id="services">
           <div class="container px-4 px-lg-5">
                <h2 class="text-center mt-0">At Your Service</h2>
@@ -126,42 +119,44 @@
                </div>
           </div>
      </section>
-     <!-- Portfolio-->
-     <section class="page-section bg-danger" id="portofolio">
-          <h2 class="text-white text-center">Portofolio</h2>
+     <section class="page-section bg-custom" id="portofolio">
+          <h2 class="text-white text-center">Projects</h2>
           <hr class="divider mb-5" />
           <div class="row" id="portfolio">
                <div class="col-md-6 mx-auto">
-                    <img class="img-fluid" src="https://via.placeholder.com/750x500" alt="" />
+                    <img class="img-fluid" src="/img/thumbnail-project.jpg" alt="" />
                </div>
-
                <div class="col-md-4">
                     <h3 class="my-3 text-white">Project Description</h3>
                     <p class="text-white">
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
-                         euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem,
-                         adipiscing in adipiscing et, interdum nec metus. Mauris ultricies,
-                         justo eu convallis placerat, felis enim.
+                         Proyek ini berisikan tentang visualisasi data kemiskinan yang mencakup 3 kabupaten, yaitu:
                     </p>
-                    <h3 class="my-3 text-white">Project Details</h3>
                     <ul class="text-white">
-                         <li>Lorem Ipsum</li>
-                         <li>Dolor Sit Amet</li>
-                         <li>Consectetur</li>
-                         <li>Adipiscing Elit</li>
+                         <li>Kabupaten Barito Kuala</li>
+                         <li>Kabupaten Hulu Sungai Utara</li>
+                         <li>Kabupaten Tanah Bumbu</li>
+                    </ul>
+                    <p class="text-white">Yang ditampilkan dalam bentuk Chart. Dan, indikator tentang kemiskinan terbagi menjadi beberapa bagian seperti:</p>
+                    <ul class="text-white">
+                         <li>Bahan Bakar Masak.</li>
+                         <li>Daya Listrik.</li>
+                         <li>Fasilitas BAB.</li>
+                         <li>Jenis Atap.</li>
+                         <li>Jenis Dinding.</li>
+                         <li>Jenis Kloset.</li>
+                         <li>Jenis Lantai.</li>
+                         <li>Kondisi Atap.</li>
+                         <li>Sumber Air Minum.</li>
+                         <li>Sumber Penerangan.</li>
                     </ul>
                </div>
-
-               <!-- /.row -->
-
-               <!-- Related Projects Row -->
                <h3 class="my-4 py-5 text-white text-center">Related Projects</h3>
                <section class="py-3">
                     <div class="container px-4 px-lg-5 mt-5">
                          <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                               <div class="col mb-5">
                                    <div class="card h-100">
-                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <img class="card-img-top" src="/img/thumbnail.jpg" alt="..." />
                                         <div class="card-body p-4">
                                              <div class="text-center">
                                                   <h5 class="fw-bolder">Bahan Bakar Masak</h5>
@@ -169,13 +164,13 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/bahanbakar_masak') ?>">View options</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/bahanbakar_masak') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
                               <div class="col mb-5">
                                    <div class="card h-100">
-                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <img class="card-img-top" src="/img/thumbnail.jpg" alt="..." />
                                         <div class="card-body p-4">
                                              <div class="text-center">
                                                   <h5 class="fw-bolder">Daya Listrik</h5>
@@ -183,13 +178,13 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/daya_listrik') ?>">View options</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/daya_listrik') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
                               <div class="col mb-5">
                                    <div class="card h-100">
-                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <img class="card-img-top" src="/img/thumbnail.jpg" alt="..." />
                                         <div class="card-body p-4">
                                              <div class="text-center">
                                                   <h5 class="fw-bolder">Fasilitas BAB</h5>
@@ -197,13 +192,13 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/fasilitas_bab') ?>">View options</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/fasilitas_bab') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
                               <div class="col mb-5">
                                    <div class="card h-100">
-                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <img class="card-img-top" src="/img/thumbnail.jpg" alt="..." />
                                         <div class="card-body p-4">
                                              <div class="text-center">
                                                   <h5 class="fw-bolder">Jenis Atap</h5>
@@ -211,13 +206,13 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_atap') ?>">View options</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_atap') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
                               <div class="col mb-5">
                                    <div class="card h-100">
-                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <img class="card-img-top" src="/img/thumbnail.jpg" alt="..." />
                                         <div class="card-body p-4">
                                              <div class="text-center">
                                                   <h5 class="fw-bolder">Jenis Dinding</h5>
@@ -225,13 +220,13 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_dinding') ?>">View options</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_dinding') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
                               <div class="col mb-5">
                                    <div class="card h-100">
-                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <img class="card-img-top" src="/img/thumbnail.jpg" alt="..." />
                                         <div class="card-body p-4">
                                              <div class="text-center">
                                                   <h5 class="fw-bolder">Jenis Kloset</h5>
@@ -239,13 +234,13 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_kloset') ?>">View options</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_kloset') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
                               <div class="col mb-5">
                                    <div class="card h-100">
-                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <img class="card-img-top" src="/img/thumbnail.jpg" alt="..." />
                                         <div class="card-body p-4">
                                              <div class="text-center">
                                                   <h5 class="fw-bolder">Jenis Lantai</h5>
@@ -253,13 +248,13 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_lantai') ?>">View options</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_lantai') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
                               <div class="col mb-5">
                                    <div class="card h-100">
-                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <img class="card-img-top" src="/img/thumbnail.jpg" alt="..." />
                                         <div class="card-body p-4">
                                              <div class="text-center">
                                                   <h5 class="fw-bolder">Kondisi Atap</h5>
@@ -267,13 +262,13 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/kondisi_atap') ?>">View options</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/kondisi_atap') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
                               <div class="col mb-5">
                                    <div class="card h-100">
-                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <img class="card-img-top" src="/img/thumbnail.jpg" alt="..." />
                                         <div class="card-body p-4">
                                              <div class="text-center">
                                                   <h5 class="fw-bolder">Sumber Air Minum</h5>
@@ -281,13 +276,13 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/sumber_airminum') ?>">View options</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/sumber_airminum') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
                               <div class="col mb-5">
                                    <div class="card h-100">
-                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <img class="card-img-top" src="/img/thumbnail.jpg" alt="..." />
                                         <div class="card-body p-4">
                                              <div class="text-center">
                                                   <h5 class="fw-bolder">Sumber Penerangan</h5>
@@ -295,7 +290,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/sumber_penerangan') ?>">View options</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/sumber_penerangan') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
@@ -304,18 +299,15 @@
                </section>
           </div>
      </section>
-     <!-- Footer-->
      <footer class="bg-light py-5">
           <div class="container px-4 px-lg-5">
-               <div class="text-center">
+               <div class="text-center fw-bold">
                     Copyright &copy; 2022 | M. Fajar Aditya, Siti Roziana Azizah, Almira
                     Syahadati Arsya
                </div>
           </div>
      </footer>
-     <!-- Bootstrap core JS-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-     <!-- SimpleLightbox plugin JS-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
      <script src="/js/scripts.js"></script>
 </body>

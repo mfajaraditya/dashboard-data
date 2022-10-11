@@ -1,55 +1,78 @@
 <?php
 $uri = service('uri');
 ?>
-
 <hr class="sidebar-divider my-0">
-<li class="nav-item <?= $uri->getSegment(2) === 'dashboard' ? 'active' : '' ?>">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Dashboard</span>
+<div class="sidebar-heading mt-4">
+    Indikator
+</div>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('user/indikator/jenis_lantai') ?>">
+        <i class="fas fa-square fa-2x text-gray-300"></i>
+        <span>Jenis Lantai</span>
     </a>
-    <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Indeks:</h6>
-            <a class="collapse-item" href="<?= base_url('user/dashboard') ?>">Total Data</a>
-            <a class="collapse-item" href="<?= base_url('user/indikator/jenis_lantai') ?>">Jenis Lantai</a>
-            <a class="collapse-item" href="<?= base_url('user/indikator/jenis_dinding') ?>">Jenis Dinding</a>
-            <a class="collapse-item" href="<?= base_url('user/indikator/fasilitas_bab') ?>">Fasilitas BAB</a>
-            <a class="collapse-item" href="<?= base_url('user/indikator/sumber_penerangan') ?>">Sumber Penerangan</a>
-            <a class="collapse-item" href="<?= base_url('user/indikator/sumber_airminum') ?>">Sumber Air Minum</a>
-            <a class="collapse-item" href="<?= base_url('user/indikator/bahanbakar_masak') ?>">Bahan Bakar Memasak</a>
-            <a class="collapse-item" href="<?= base_url('user/indikator/daya_listrik') ?>">Daya Listrik</a>
-            <a class="collapse-item" href="<?= base_url('user/indikator/jenis_atap') ?>">Jenis Atap</a>
-            <a class="collapse-item" href="<?= base_url('user/indikator/jenis_kloset') ?>">Jenis Kloset</a>
-            <a class="collapse-item" href="<?= base_url('user/indikator/kondisi_atap') ?>">Kondisi Atap</a>
-
-        </div>
-    </div>
 </li>
-<li class="nav-item <?= $uri->getSegment(2) === 'tabel' ? 'active' : '' ?>">
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('user/indikator/jenis_dinding') ?>">
+        <i class="fas fa-house-user fa-2x text-gray-300"></i>
+        <span>Jenis Dinding</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('user/indikator/fasilitas_bab') ?>">
+        <i class="fas fa-toilet fa-2x text-gray-300"></i>
+        <span>Fasilitas BAB</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('user/indikator/sumber_penerangan') ?>">
+        <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
+        <span>Sumber Penerangan</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('user/indikator/sumber_airminum') ?>">
+        <i class="fas fa-bottle-water fa-2x text-gray-300"></i>
+        <span>Sumber Air Minum</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('user/indikator/bahanbakar_masak') ?>">
+        <i class="fas fa-fire fa-2x text-gray-300"></i>
+        <span>Bahan Bakar Masak</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('user/indikator/daya_listrik') ?>">
+        <i class="fas fa-bolt fa-2x text-gray-300"></i>
+        <span>Daya Listrik</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('user/indikator/jenis_atap') ?>">
+        <i class="fas fa-person-shelter fa-2x text-gray-300"></i>
+        <span>Jenis Atap</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('user/indikator/jenis_kloset') ?>">
+        <i class="fas fa-restroom fa-2x text-gray-300"></i>
+        <span>Jenis Kloset</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('user/indikator/kondisi_atap') ?>">
+        <i class="fas fa-person-shelter fa-2x text-gray-300"></i>
+        <span>Kondisi Atap</span>
+    </a>
+</li>
+<hr class="sidebar-divider my-0">
+<div class="sidebar-heading mt-4">
+    Tabel
+</div>
+<li class="nav-item">
     <a class="nav-link" href="<?= base_url('user/tabel') ?>">
-        <i class="fas fa-fw fa-table"></i>
-        <span>Table</span>
+        <i class="fas fa-table fa-2x text-gray-300"></i>
+        <span>Tabel</span>
     </a>
 </li>
-
-
-<!-- <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-        <i class="fas fa-fw fa-folder"></i>
-        <span>Pages</span>
-    </a>
-    <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-        </div>
-    </div>
-</li> -->
 <hr class="sidebar-divider d-none d-md-block">
