@@ -7,10 +7,10 @@
                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                          <li class="nav-item">
-                              <a class="nav-link" href="#about">About</a>
+                              <a class="nav-link" href="#about">Visi</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#services">Services</a>
+                              <a class="nav-link" href="#services">Misi</a>
                          </li>
                          <li class="nav-item">
                               <a class="nav-link" href="#portofolio">Portofolio</a>
