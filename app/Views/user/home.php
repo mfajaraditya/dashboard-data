@@ -67,19 +67,18 @@
                               KALSEL MAJU<br />
                               KALIMANTAN SELATAN MAKMUR, SEJAHTERA, DAN BERKELANJUTAN
                          </h3>
-                         <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
                     </div>
                </div>
           </div>
      </section>
-     <section class="page-section bg-vision" id="services">
+     <section class="page-section bg-vision service" id="services">
           <div class="container px-4 px-lg-5">
                <h2 class="text-center text-light mt-0">MISI KALIMANTAN SELATAN</h2>
                <hr class="divider" />
                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
                     <div class="col-lg-3 col-md-6 text-center">
-                         <div class="card h-100">
+                         <div class="card-vision h-100">
                               <div class="mt-5">
                                    <div class="mb-2"><i class="bi-person-fill fs-1 text-blue"></i></div>
                                    <h3 class="h4 mb-2 text-blue"> Mengembangkan Sumber Daya Manusia yang Berkualitas dan Berbudi Pekerti Luhur.</h3>
@@ -88,7 +87,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 text-center">
-                         <div class="card h-100">
+                         <div class="card-vision h-100">
                               <div class="mt-5">
                                    <div class="mb-2">
                                         <i class="bi-currency-dollar fs-1 text-blue"></i>
@@ -99,7 +98,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 text-center">
-                         <div class="card h-100">
+                         <div class="card-vision h-100">
                               <div class="mt-5">
                                    <div class="mb-2"><i class="bi-truck fs-1 text-blue"></i></div>
                                    <h3 class="h4 mb-2 text-blue">Memperkuat Sarana Prasarana Dasar dan Perekonomian.</h3>
@@ -108,7 +107,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 text-center">
-                         <div class="card h-100">
+                         <div class="card-vision h-100">
                               <div class="mt-5">
                                    <div class="mb-2"><i class="bi-info-circle fs-1 text-blue"></i></div>
                                    <h3 class="h4 mb-2 text-blue">Tata Kelola Pemerintah yang Lebih Fokus Pada Pelayanan Publik.</h3>
@@ -117,27 +116,22 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 text-center">
-                         <div class="card h-100 mt-4">
+                         <div class="card-vision h-100 mt-4">
                               <div class="mt-5">
                                    <div class="mb-2"><i class="bi-tree-fill fs-1 text-blue"></i></div>
                                    <h3 class="h4 mb-2 text-blue"> Menjaga Kelestarian Lingkungan Hidup dan Memperkuat Ketahanan Bencana.</h3>
                               </div>
                          </div>
                     </div>
-
-
-
-
-
                </div>
           </div>
      </section>
-     <section class="page-section" id="portofolio">
+     <section class="page-section bg-grey" id="portofolio">
           <h2 class="text-center">Projects</h2>
           <hr class="divider mb-5" />
           <div class="row" id="portfolio">
                <div class="col-md-6 mx-auto">
-                    <img class="img-fluid" src="/img/thumbnail-project/asset 1.png" alt="" />
+                    <img class="img-fluid" src="/img/asset 1.png" alt="" />
                </div>
                <div class="col-md-4">
                     <h3 class="my-3 ">Project Description</h3>
@@ -163,7 +157,8 @@
                          <li>Sumber Penerangan.</li>
                     </ul>
                </div>
-               <h3 class="my-4 py-5 text-center">Related Projects</h3>
+               <h3 class="text-center">Related Projects</h3>
+               <hr class="divider mb-5" />
                <section class="py-3">
                     <div class="container px-4 px-lg-5 mt-5">
                          <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -184,7 +179,7 @@
                               <div class="col mb-5">
                                    <div class="card h-100">
                                         <h5 class="fw-bolder text-center mt-4">Daya Listrik</h5>
-                                        <img class="card-img-top" src="/img/asset 1.png" alt="..." />
+                                        <img class="card-img-top" src="/img/asset 5.png" alt="..." />
                                         <div class="card-body p-2">
                                              <div class="text-center">
                                                   Grafik tentang Daya Listrik
@@ -198,7 +193,7 @@
                               <div class="col mb-5">
                                    <div class="card h-100">
                                         <h5 class="fw-bolder text-center mt-4">Fasilitas BAB</h5>
-                                        <img class="card-img-top" src="/img/asset 1.png" alt="..." />
+                                        <img class="card-img-top" src="/img/asset 6.png" alt="..." />
                                         <div class="card-body p-2">
                                              <div class="text-center">
                                                   Grafik tentang Fasilitas BAB
@@ -212,7 +207,7 @@
                               <div class="col mb-5">
                                    <div class="card h-100">
                                         <h5 class="fw-bolder text-center mt-4">Jenis Atap</h5>
-                                        <img class="card-img-top" src="/img/asset 1.png" alt="..." />
+                                        <img class="card-img-top" src="/img/asset 12.png" alt="..." />
                                         <div class="card-body p-2">
                                              <div class="text-center">
                                                   Grafik tentang Jenis Atap
@@ -226,7 +221,7 @@
                               <div class="col mb-5">
                                    <div class="card h-100">
                                         <h5 class="fw-bolder text-center mt-4">Jenis Dinding</h5>
-                                        <img class="card-img-top" src="/img/asset 1.png" alt="..." />
+                                        <img class="card-img-top" src="/img/asset 12.png" alt="..." />
                                         <div class="card-body p-2">
                                              <div class="text-center">
                                                   Grafik tentang Jenis Dinding
@@ -240,7 +235,7 @@
                               <div class="col mb-5">
                                    <div class="card h-100">
                                         <h5 class="fw-bolder text-center mt-4">Jenis Kloset</h5>
-                                        <img class="card-img-top" src="/img/asset 1.png" alt="..." />
+                                        <img class="card-img-top" src="/img/asset 6.png" alt="..." />
                                         <div class="card-body p-2">
                                              <div class="text-center">
                                                   Grafik tentang Jenis Kloset
@@ -254,7 +249,7 @@
                               <div class="col mb-5">
                                    <div class="card h-100">
                                         <h5 class="fw-bolder text-center mt-4">Jenis Lantai</h5>
-                                        <img class="card-img-top" src="/img/asset 1.png" alt="..." />
+                                        <img class="card-img-top" src="/img/asset 5.png" alt="..." />
                                         <div class="card-body p-2">
                                              <div class="text-center">
                                                   Grafik tentang Jenis Lantai
@@ -296,7 +291,7 @@
                               <div class="col mb-5">
                                    <div class="card h-100">
                                         <h5 class="fw-bolder text-center mt-4">Sumber Penerangan</h5>
-                                        <img class="card-img-top" src="/img/asset 1.png" alt="..." />
+                                        <img class="card-img-top" src="/img/asset 12.png" alt="..." />
                                         <div class="card-body p-2">
                                              <div class="text-center">
                                                   Grafik tentang Sumber Penerangan
@@ -315,8 +310,7 @@
      <footer class="bg-light py-5">
           <div class="container px-4 px-lg-5">
                <div class="text-center fw-semibold">
-                    Copyright &copy; 2022 | M. Fajar Aditya, Siti Roziana Azizah, Almira
-                    Syahadati Arsya
+                    Copyright &copy; Students of Computer Science | University Lambung Mangkurat
                </div>
           </div>
      </footer>

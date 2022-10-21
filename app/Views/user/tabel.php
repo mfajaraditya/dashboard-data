@@ -135,11 +135,11 @@
                </tbody>
                <tfoot>
                     <tr>
-                         <th scope="col">No.</th>
-                         <th scope="col">Nama Kabupaten</th>
-                         <th scope="col">Sangat Miskin</th>
-                         <th scope="col">Miskin Menengah</th>
-                         <th scope="col">Tidak Miskin</th>
+                         <th scope="col"></th>
+                         <th scope="col"></th>
+                         <th scope="col"></th>
+                         <th scope="col"></th>
+                         <th scope="col">Total</th>
                          <th scope="col"><?= $total_data; ?></th>
                     </tr>
                </tfoot>

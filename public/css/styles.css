@@ -43,6 +43,7 @@
   --bs-vision: #4e73df
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-grey-rgb: 238, 238, 238;
   --bs-primary-rgb: 244, 98, 58;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -4521,6 +4522,18 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 18px;
+}
+
+.card-vision {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
   background-color: #e5e4e2;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -7825,6 +7838,11 @@ textarea.form-control-lg {
 
 .text-opacity-100 {
   --bs-text-opacity: 1;
+}
+
+.bg-grey {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-grey-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-primary {
@@ -11453,6 +11471,16 @@ header.masthead h1, header.masthead .h1 {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
+}
+
+section.service{
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: url('/../img/bg-misi.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
