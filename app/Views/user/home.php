@@ -172,7 +172,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/bahanbakar_masak') ?>">Lihat Data</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('indikator/bahanbakar_masak') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
@@ -186,7 +186,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/daya_listrik') ?>">Lihat Data</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('indikator/daya_listrik') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
@@ -200,7 +200,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/fasilitas_bab') ?>">Lihat Data</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('indikator/fasilitas_bab') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
@@ -214,7 +214,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_atap') ?>">Lihat Data</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('indikator/jenis_atap') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
@@ -228,7 +228,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_dinding') ?>">Lihat Data</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('indikator/jenis_dinding') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
@@ -242,7 +242,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_kloset') ?>">Lihat Data</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('indikator/jenis_kloset') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
@@ -256,7 +256,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/jenis_lantai') ?>">Lihat Data</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('indikator/jenis_lantai') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
@@ -270,7 +270,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/kondisi_atap') ?>">Lihat Data</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('indikator/kondisi_atap') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
@@ -284,7 +284,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/sumber_airminum') ?>">Lihat Data</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('indikator/sumber_airminum') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>
@@ -298,7 +298,7 @@
                                              </div>
                                         </div>
                                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('user/indikator/sumber_penerangan') ?>">Lihat Data</a></div>
+                                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?= base_url('indikator/sumber_penerangan') ?>">Lihat Data</a></div>
                                         </div>
                                    </div>
                               </div>

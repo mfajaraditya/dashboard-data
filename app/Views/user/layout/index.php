@@ -20,7 +20,7 @@
 <body id="page-top">
     <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion">
-            <a class="sidebar-brand d-flex align-items-center justify-content-center mx-2" href="/user/dashboard">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center mx-2" href="/dashboard">
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-fw fa-chart-bar"></i>
                 </div>

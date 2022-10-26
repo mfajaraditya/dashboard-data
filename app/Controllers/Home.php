@@ -5,14 +5,12 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\ChartModel;
 use App\Models\GrafikModel;
-use App\Models\TabelModel;
 
 class Home extends BaseController
 {
     public function __construct()
     {
         $this->grafikModel = new GrafikModel();
-        $this->tabelModel = new TabelModel();
         $this->chartModel = new ChartModel();
     }
 
@@ -124,14 +122,6 @@ class Home extends BaseController
                     'indikator' => [
                         'Tidak Diketahui','Tembok','Plesteran anyaman bambu/kawat','Kayu','Anyaman bambu','Batang Kayu','Bambu','Lainnya',
                     ],
-                    // 'indikator0' => 'Tidak Diketahui',
-                    // 'indikator1' => 'Tembok',
-                    // 'indikator2' => 'Plesteran anyaman bambu/kawat',
-                    // 'indikator3' => 'Kayu',
-                    // 'indikator4' => 'Anyaman bambu',
-                    // 'indikator5' => 'Batang Kayu',
-                    // 'indikator6' => 'Bambu',
-                    // 'indikator7' => 'Lainnya',
                     'data_dinding0' => $this->chartModel->jenis_dinding_batola0(),
                     'data_dinding1' => $this->chartModel->jenis_dinding_batola1(),
                     'data_dinding2' => $this->chartModel->jenis_dinding_batola2(),
