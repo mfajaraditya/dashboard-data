@@ -1,5 +1,4 @@
 <?= $this->extend('/user/layout/index') ?>
-
 <?= $this->section('css') ?>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
@@ -30,6 +29,7 @@
      });
 </script>
 <?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 <div class="wrapper">
      <div id="content">
@@ -106,7 +106,6 @@
           </div>
      </div>
 </div>
-
 <div class="card">
      <div class="card-body">
           <table id="example1" class="table table-bordered table-striped">

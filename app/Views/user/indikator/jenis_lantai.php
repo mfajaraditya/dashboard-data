@@ -1,7 +1,5 @@
 <?= $this->extend('/user/layout/index') ?>
-
 <?= $this->section('css') ?>
-
 <link rel="stylesheet" href="<?= base_url('plugins/jqvmap/jqvmap.min.css'); ?>">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <link rel="stylesheet" href="<?= base_url('plugins/fontawesome-free/css/all.min.css'); ?>">
@@ -17,9 +15,7 @@
 <script src="<?= base_url('plugins/moment/moment.min.j'); ?>s"></script>
 <script src="<?= base_url('plugins/daterangepicker/daterangepicker.js'); ?>"></script>
 <script src="<?= base_url('plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js'); ?>"></script>
-<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script> -->
 <?= $this->endSection() ?>
-
 
 <?= $this->section('content') ?>
 <div class="wraper">
@@ -207,7 +203,6 @@
                               </div>
                          </div>
                     </div>
-
                     <div class="card shadow mb-4">
                          <div class="card-header py-3 border-bottom-dark">
                               <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
@@ -223,6 +218,7 @@
      </div>
 </div>
 <?= $this->endSection() ?>
+
 <?= $this->section('js') ?>
 <script>
      const labels = <?= json_encode($data_kabkota) ?>;
@@ -366,7 +362,6 @@
                }
           ],
      };
-
      const config = {
           type: "bar",
           data: data,
@@ -374,7 +369,6 @@
                maintainAspectRatio: false
           },
      };
-
      const myBarChart = new Chart(document.getElementById("myBarChart"), config);
 </script>
 <?= $this->endSection() ?>

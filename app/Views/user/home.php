@@ -9,8 +9,6 @@
      <title>Visualisasi Data</title>
      <link rel="icon" type="image/x-icon" href="/img/logo.ico" />
      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type=<!-- SimpleLightbox plugin CSS-->
      <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
      <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
      <link href="/css/styles.css" rel="stylesheet" />
@@ -76,7 +74,6 @@
                <h2 class="text-center text-light mt-0">MISI KALIMANTAN SELATAN</h2>
                <hr class="divider" />
                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-
                     <div class="col-lg-3 col-md-6 text-center">
                          <div class="card-vision h-100">
                               <div class="mt-5">
@@ -85,7 +82,6 @@
                               </div>
                          </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6 text-center">
                          <div class="card-vision h-100">
                               <div class="mt-5">
@@ -96,7 +92,6 @@
                               </div>
                          </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6 text-center">
                          <div class="card-vision h-100">
                               <div class="mt-5">
@@ -105,7 +100,6 @@
                               </div>
                          </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6 text-center">
                          <div class="card-vision h-100">
                               <div class="mt-5">
@@ -114,7 +108,6 @@
                               </div>
                          </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6 text-center">
                          <div class="card-vision h-100 mt-4">
                               <div class="mt-5">

@@ -1,7 +1,5 @@
 <?= $this->extend('/user/layout/index') ?>
-
 <?= $this->section('css') ?>
-
 <link rel="stylesheet" href="<?= base_url('plugins/jqvmap/jqvmap.min.css'); ?>">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <link rel="stylesheet" href="<?= base_url('plugins/fontawesome-free/css/all.min.css'); ?>">
@@ -17,9 +15,7 @@
 <script src="<?= base_url('plugins/moment/moment.min.j'); ?>s"></script>
 <script src="<?= base_url('plugins/daterangepicker/daterangepicker.js'); ?>"></script>
 <script src="<?= base_url('plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js'); ?>"></script>
-<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script> -->
 <?= $this->endSection() ?>
-
 
 <?= $this->section('content') ?>
 <div class="wraper">
@@ -126,6 +122,7 @@
      </div>
 </div>
 <?= $this->endSection() ?>
+
 <?= $this->section('js') ?>
 <script>
      const labels = <?= json_encode($data_kabkota) ?>;
@@ -134,60 +131,59 @@
                return [val.kabkota]
           }),
           datasets: [{
-                    label: 'Sendiri',
-                    backgroundColor: [
-                         "rgba(255, 0, 0)",
-                    ],
-                    borderColor: [
-                         "rgba(255, 0, 0, 0.7)",
-                    ],
-                    data: labels.map((val) => {
-                         return [val.fasilitas_bab1]
-                    }),
-                    borderWidth: 1,
-                    cutout: '90%'
-               }, {
-                    label: 'Bersama',
-                    backgroundColor: [
-                         "rgba(255, 200, 0)",
-                    ],
-                    borderColor: [
-                         "rgba(255, 200, 0, 0.7)",
-                    ],
-                    data: labels.map((val) => {
-                         return [val.fasilitas_bab2]
-                    }),
-                    borderWidth: 1,
-                    cutout: '90%'
-               }, {
-                    label: 'Umum',
-                    backgroundColor: [
-                         "rgba(0, 255, 153)",
-                    ],
-                    borderColor: [
-                         "rgba(0, 255, 153, 0.7)",
-                    ],
-                    data: labels.map((val) => {
-                         return [val.fasilitas_bab3]
-                    }),
-                    borderWidth: 1,
-                    cutout: '90%'
-               }, {
-                    label: 'Tidak Ada',
-                    backgroundColor: [
-                         "rgba(0, 174, 255)",
-                    ],
-                    borderColor: [
-                         "rgba(0, 174, 255, 0.7)",
-                    ],
-                    data: labels.map((val) => {
-                         return [val.fasilitas_bab4]
-                    }),
-                    borderWidth: 1,
-                    cutout: '90%'
-               }],
+               label: 'Sendiri',
+               backgroundColor: [
+                    "rgba(255, 0, 0)",
+               ],
+               borderColor: [
+                    "rgba(255, 0, 0, 0.7)",
+               ],
+               data: labels.map((val) => {
+                    return [val.fasilitas_bab1]
+               }),
+               borderWidth: 1,
+               cutout: '90%'
+          }, {
+               label: 'Bersama',
+               backgroundColor: [
+                    "rgba(255, 200, 0)",
+               ],
+               borderColor: [
+                    "rgba(255, 200, 0, 0.7)",
+               ],
+               data: labels.map((val) => {
+                    return [val.fasilitas_bab2]
+               }),
+               borderWidth: 1,
+               cutout: '90%'
+          }, {
+               label: 'Umum',
+               backgroundColor: [
+                    "rgba(0, 255, 153)",
+               ],
+               borderColor: [
+                    "rgba(0, 255, 153, 0.7)",
+               ],
+               data: labels.map((val) => {
+                    return [val.fasilitas_bab3]
+               }),
+               borderWidth: 1,
+               cutout: '90%'
+          }, {
+               label: 'Tidak Ada',
+               backgroundColor: [
+                    "rgba(0, 174, 255)",
+               ],
+               borderColor: [
+                    "rgba(0, 174, 255, 0.7)",
+               ],
+               data: labels.map((val) => {
+                    return [val.fasilitas_bab4]
+               }),
+               borderWidth: 1,
+               cutout: '90%'
+          }],
      };
-
      const config = {
           type: "bar",
           data: data,
@@ -195,7 +191,6 @@
                maintainAspectRatio: false
           },
      };
-
      const myBarChart = new Chart(document.getElementById("myBarChart"), config);
 </script>
 <?= $this->endSection() ?>
