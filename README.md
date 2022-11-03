@@ -10,9 +10,10 @@
 <br>
 
 ## Tampilan Home
+<img src="https://github.com/mfajaraditya/dashboard-data/blob/master/public/img/TampilanDashboard.png?raw=true" alt="Tampilan Home">
 
+## Tampilan Indikator
+<img src="https://github.com/mfajaraditya/dashboard-data/blob/master/public/img/TampilanIndikator.png?raw=true" alt="Tampilan Indikator">
 
-
-### Documentation
-
-
+## Tampilan Tabel
+<img src="https://github.com/mfajaraditya/dashboard-data/blob/master/public/img/TampilanTabel.png?raw=true" alt="Tampilan Tabel">
