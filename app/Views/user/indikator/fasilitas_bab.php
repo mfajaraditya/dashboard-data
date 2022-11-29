@@ -68,7 +68,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $fasilitas2; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-user-group fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -100,7 +100,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $fasilitas4; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-question fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="card shadow mb-4">
                          <div class="card-header py-3 border-bottom-dark">
-                              <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                              <h6 class="m-0 font-weight-bold text-primary"><?= $title; ?></h6>
                          </div>
                          <div class="card-body">
                               <div class="chart-bar">

@@ -48,11 +48,11 @@
                                         <div class="row no-gutters align-items-center">
                                              <div class="col mr-2">
                                                   <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                       Genteng keramik</div>
+                                                       Genteng beton</div>
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap1; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-people-roof fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -64,11 +64,11 @@
                                         <div class="row no-gutters align-items-center">
                                              <div class="col mr-2">
                                                   <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                       Genteng metal</div>
+                                                       Genteng keramik</div>
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap2; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-people-roof fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -80,11 +80,11 @@
                                         <div class="row no-gutters align-items-center">
                                              <div class="col mr-2">
                                                   <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                       Genteng tanah liat</div>
+                                                       Genteng metal</div>
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap3; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-people-roof fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -96,7 +96,7 @@
                                         <div class="row no-gutters align-items-center">
                                              <div class="col mr-2">
                                                   <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                       Asbes</div>
+                                                       Genteng tanah liat</div>
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap4; ?></div>
                                              </div>
                                              <div class="col-auto">
@@ -112,11 +112,11 @@
                                         <div class="row no-gutters align-items-center">
                                              <div class="col mr-2">
                                                   <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                       Seng</div>
+                                                       Asbes</div>
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap5; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-people-roof fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -128,11 +128,27 @@
                                         <div class="row no-gutters align-items-center">
                                              <div class="col mr-2">
                                                   <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                       Sirap</div>
+                                                       Seng</div>
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap6; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-people-roof fa-2x text-gray-300"></i>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-xl-3 col-md-6 mb-4">
+                              <div class="card border-left-success shadow h-100 py-2">
+                                   <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                             <div class="col mr-2">
+                                                  <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                       Sirap</div>
+                                                  <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap7; ?></div>
+                                             </div>
+                                             <div class="col-auto">
+                                                  <i class="fas fa-people-roof fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -145,26 +161,10 @@
                                              <div class="col mr-2">
                                                   <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                        Bambu</div>
-                                                  <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap7; ?></div>
-                                             </div>
-                                             <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
-                                             </div>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="col-xl-3 col-md-6 mb-4">
-                              <div class="card border-left-success shadow h-100 py-2">
-                                   <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                             <div class="col mr-2">
-                                                  <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                       Jerami</div>
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap8; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-people-roof fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -176,11 +176,11 @@
                                         <div class="row no-gutters align-items-center">
                                              <div class="col mr-2">
                                                   <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                       Lainnya</div>
+                                                       Jerami/ijuk/daun/rumbia</div>
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap9; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-people-roof fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -196,7 +196,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jenisAtap10; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-server fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -205,7 +205,7 @@
                     </div>
                     <div class="card shadow mb-4">
                          <div class="card-header py-3 border-bottom-dark">
-                              <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                              <h6 class="m-0 font-weight-bold text-primary"><?= $title; ?></h6>
                          </div>
                          <div class="card-body">
                               <div class="chart-bar">
@@ -227,7 +227,7 @@
                return [val.kabkota]
           }),
           datasets: [{
-                    label: 'Beton',
+                    label: 'Genteng Beton',
                     backgroundColor: [
                          "rgba(255, 0, 0)",
                     ],

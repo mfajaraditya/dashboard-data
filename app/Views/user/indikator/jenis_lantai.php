@@ -52,7 +52,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $lantai1; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-square fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -68,7 +68,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $lantai2; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-square fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -84,7 +84,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $lantai3; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-rug fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -100,7 +100,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $lantai4; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-square fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -132,7 +132,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $lantai6; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-square fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -164,7 +164,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $lantai8; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -180,7 +180,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $lantai9; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-earth-asia fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -196,7 +196,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $lantai10; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-server fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -205,7 +205,7 @@
                     </div>
                     <div class="card shadow mb-4">
                          <div class="card-header py-3 border-bottom-dark">
-                              <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                              <h6 class="m-0 font-weight-bold text-primary"><?= $title; ?></h6>
                          </div>
                          <div class="card-body">
                               <div class="chart-bar">

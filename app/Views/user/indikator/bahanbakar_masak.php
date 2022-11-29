@@ -52,7 +52,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $bahanbakarMasak1; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-bolt fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -68,7 +68,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $bahanbakarMasak2; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-fire-flame-simple fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -84,7 +84,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $bahanbakarMasak3; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-fire-flame-simple fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -96,11 +96,11 @@
                                         <div class="row no-gutters align-items-center">
                                              <div class="col mr-2">
                                                   <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                       Gas kota</div>
+                                                       Biogas</div>
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $bahanbakarMasak4; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-fire-flame-simple fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -116,7 +116,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $bahanbakarMasak5; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-fire-flame-simple fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -132,7 +132,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $bahanbakarMasak6; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-fire-flame-simple fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -148,7 +148,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $bahanbakarMasak7; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-fire-flame-simple fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -164,7 +164,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $bahanbakarMasak8; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -189,7 +189,7 @@
                     </div>
                     <div class="card shadow mb-4">
                          <div class="card-header py-3 border-bottom-dark">
-                              <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                              <h6 class="m-0 font-weight-bold text-primary"><?= $title; ?></h6>
                          </div>
                          <div class="card-body">
                               <div class="chart-bar">

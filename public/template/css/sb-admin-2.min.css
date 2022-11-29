@@ -9904,6 +9904,7 @@ a:focus {
 }
 .sidebar-dark .nav-item.active .nav-link {
   color: #fff;
+  background-color: #f4623a;
 }
 .sidebar-dark .nav-item.active .nav-link i {
   color: #fff;

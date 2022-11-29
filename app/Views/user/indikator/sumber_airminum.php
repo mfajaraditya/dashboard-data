@@ -53,7 +53,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum1; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-bottle-water fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -69,7 +69,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum2; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-bottle-water fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -85,7 +85,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum3; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-gauge fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -101,7 +101,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum4; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-gauge fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -117,7 +117,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum5; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-tree fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-jar fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -133,7 +133,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum6; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-jar fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -149,7 +149,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum7; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-jar fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -165,7 +165,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum8; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-droplet fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -181,7 +181,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum9; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-droplet fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -197,7 +197,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum10; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-water fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -213,7 +213,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum11; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-cloud-rain fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -229,7 +229,7 @@
                                                   <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $sumberAirminum12; ?></div>
                                              </div>
                                              <div class="col-auto">
-                                                  <i class="fas fa-house-user fa-2x text-gray-300"></i>
+                                                  <i class="fas fa-server fa-2x text-gray-300"></i>
                                              </div>
                                         </div>
                                    </div>
@@ -238,7 +238,7 @@
                     </div>
                     <div class="card shadow mb-4">
                          <div class="card-header py-3 border-bottom-dark">
-                              <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                              <h6 class="m-0 font-weight-bold text-primary"><?= $title; ?></h6>
                          </div>
                          <div class="card-body">
                               <div class="chart-bar">

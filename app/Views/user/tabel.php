@@ -24,7 +24,27 @@
                "responsive": false,
                "lengthChange": false,
                "autoWidth": false,
-               "buttons": ["copy", "csv", "excel", "pdf", "print"]
+               "buttons": [{
+                         extend: 'copyHtml5',
+                         footer: true
+                    },
+                    {
+                         extend: 'excelHtml5',
+                         footer: true
+                    },
+                    {
+                         extend: 'csvHtml5',
+                         footer: true
+                    },
+                    {
+                         extend: 'pdfHtml5',
+                         footer: true
+                    },
+                    {
+                         extend: 'print',
+                         footer: true
+                    }
+               ]
           }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
      });
 </script>
