@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class KategoriIndikator extends Migration
+class KategoriFasilitas extends Migration
 {
     public function up()
     {
@@ -22,11 +22,11 @@ class KategoriIndikator extends Migration
         ]);
 
         $this->forge->addKey('id_kategori', true);
-        $this->forge->createTable('kategori_indikator');
+        $this->forge->createTable('kategori_fasilitas');
     }
 
     public function down()
     {
-        $this->forge->dropTable('kategori_indikator');
+        $this->forge->dropTable('kategori_fasilitas');
     }
 }

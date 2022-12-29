@@ -29,6 +29,8 @@ class Kluster extends Migration
         $this->forge->addForeignKey('id_kabupaten', 'kabupaten', 'id_kabupaten', 'CASCADE', 'CASCADE');
 
         $this->forge->addKey('id_kluster', true);
+        $this->forge->addKey('idbdt');
+
         $this->forge->createTable('kluster');
     }
 

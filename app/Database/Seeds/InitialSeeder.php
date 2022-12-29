@@ -8,7 +8,7 @@ class InitialSeeder extends Seeder
 {
     public function run()
     {
-        $this->db->table('kategori_indikator')->insertBatch([
+        $this->db->table('kategori_fasilitas')->insertBatch([
             [
                 'id_kategori' => 1,
                 'nama_kategori' => 'Bahan Bakar Masak',
@@ -51,274 +51,431 @@ class InitialSeeder extends Seeder
             ],
         ]);
 
-        $this->db->table('indikator')->insertBatch([
+        $this->db->table('fasilitas')->insertBatch([
             [
-                'nama_indikator' => 'Listrik',
+                'nama_fasilitas' => 'Listrik',
                 'nilai' => 0,
                 'id_kategori' => 1,
             ],
             [
-                'nama_indikator' => 'Gas > 3 kg',
+                'nama_fasilitas' => 'Gas > 3 kg',
                 'nilai' => 0,
                 'id_kategori' => 1,
             ],
             [
-                'nama_indikator' => 'Gas 3 kg',
+                'nama_fasilitas' => 'Gas 3 kg',
                 'nilai' => 0,
                 'id_kategori' => 1,
             ],
             [
-                'nama_indikator' => 'Gas Kota/Biogas',
+                'nama_fasilitas' => 'Gas Kota/Biogas',
                 'nilai' => 0,
                 'id_kategori' => 1,
             ],
             [
-                'nama_indikator' => 'Minyak tanah',
+                'nama_fasilitas' => 'Minyak tanah',
                 'nilai' => 80,
                 'id_kategori' => 1,
             ],
             [
-                'nama_indikator' => 'Briket',
+                'nama_fasilitas' => 'Briket',
                 'nilai' => 0,
                 'id_kategori' => 1,
             ],
             [
-                'nama_indikator' => 'Arang',
+                'nama_fasilitas' => 'Arang',
                 'nilai' => 95,
                 'id_kategori' => 1,
             ],
             [
-                'nama_indikator' => 'Kayu Bakar',
+                'nama_fasilitas' => 'Kayu Bakar',
                 'nilai' => 90,
                 'id_kategori' => 1,
             ],
             [
-                'nama_indikator' => 'Tidak memasak di rumah',
+                'nama_fasilitas' => 'Tidak memasak di rumah',
                 'nilai' => 0,
                 'id_kategori' => 1,
             ],
         ]);
 
-        $this->db->table('indikator')->insertBatch([
+        $this->db->table('fasilitas')->insertBatch([
             [
-                'nama_indikator' => '450 watt',
+                'nama_fasilitas' => '450 watt',
                 'nilai' => 70,
                 'id_kategori' => 2,
             ],
             [
-                'nama_indikator' => '900 watt',
+                'nama_fasilitas' => '900 watt',
                 'nilai' => 50,
                 'id_kategori' => 2,
             ],
             [
-                'nama_indikator' => '1.300 watt',
+                'nama_fasilitas' => '1.300 watt',
                 'nilai' => 0,
                 'id_kategori' => 2,
             ],
             [
-                'nama_indikator' => '2.200 watt',
+                'nama_fasilitas' => '2.200 watt',
                 'nilai' => 0,
                 'id_kategori' => 2,
             ],
             [
-                'nama_indikator' => '> 2.200 watt',
+                'nama_fasilitas' => '> 2.200 watt',
                 'nilai' => 0,
                 'id_kategori' => 2,
             ],
             [
-                'nama_indikator' => 'Tanpa meteran',
+                'nama_fasilitas' => 'Tanpa meteran',
                 'nilai' => 0,
                 'id_kategori' => 2,
             ],
         ]);
 
-        $this->db->table('indikator')->insertBatch([
+        $this->db->table('fasilitas')->insertBatch([
             [
-                'nama_indikator' => 'Sendiri',
+                'nama_fasilitas' => 'Sendiri',
                 'nilai' => 0,
                 'id_kategori' => 3,
             ],
             [
-                'nama_indikator' => 'Bersama',
+                'nama_fasilitas' => 'Bersama',
                 'nilai' => 90,
                 'id_kategori' => 3,
             ],
             [
-                'nama_indikator' => 'Umum',
+                'nama_fasilitas' => 'Umum',
                 'nilai' => 90,
                 'id_kategori' => 3,
             ],
             [
-                'nama_indikator' => 'Tidak ada',
+                'nama_fasilitas' => 'Tidak ada',
                 'nilai' => 100,
                 'id_kategori' => 3,
             ],
         ]);
 
-        $this->db->table('indikator')->insertBatch([
+        $this->db->table('fasilitas')->insertBatch([
             [
-                'nama_indikator' => 'Beton/genteng beton',
+                'nama_fasilitas' => 'Beton/genteng beton',
                 'nilai' => 0,
                 'id_kategori' => 4,
             ],
             [
-                'nama_indikator' => 'Genteng keramik',
+                'nama_fasilitas' => 'Genteng keramik',
                 'nilai' => 0,
                 'id_kategori' => 4,
             ],
             [
-                'nama_indikator' => 'Genteng metal',
+                'nama_fasilitas' => 'Genteng metal',
                 'nilai' => 0,
                 'id_kategori' => 4,
             ],
             [
-                'nama_indikator' => 'Genteng tanah liat',
+                'nama_fasilitas' => 'Genteng tanah liat',
                 'nilai' => 30,
                 'id_kategori' => 4,
             ],
             [
-                'nama_indikator' => 'Asbes',
+                'nama_fasilitas' => 'Asbes',
                 'nilai' => 40,
                 'id_kategori' => 4,
             ],
             [
-                'nama_indikator' => 'Seng',
+                'nama_fasilitas' => 'Seng',
                 'nilai' => 50,
                 'id_kategori' => 4,
             ],
             [
-                'nama_indikator' => 'Sirap',
+                'nama_fasilitas' => 'Sirap',
                 'nilai' => 60,
                 'id_kategori' => 4,
             ],
             [
-                'nama_indikator' => 'Bambu',
+                'nama_fasilitas' => 'Bambu',
                 'nilai' => 70,
                 'id_kategori' => 4,
             ],
             [
-                'nama_indikator' => 'Jerami/ijuk/daun-daunan/rumbia',
+                'nama_fasilitas' => 'Jerami/ijuk/daun-daunan/rumbia',
                 'nilai' => 80,
                 'id_kategori' => 4,
             ],
             [
-                'nama_indikator' => 'Lainnya',
+                'nama_fasilitas' => 'Lainnya',
                 'nilai' => 0,
                 'id_kategori' => 4,
             ],
         ]);
 
-        $this->db->table('indikator')->insertBatch([
+        $this->db->table('fasilitas')->insertBatch([
             [
-                'nama_indikator' => 'Tembok',
+                'nama_fasilitas' => 'Tembok',
                 'nilai' => 0,
                 'id_kategori' => 5,
             ],
             [
-                'nama_indikator' => 'Plesteran anyaman bambu/kawat',
+                'nama_fasilitas' => 'Plesteran anyaman bambu/kawat',
                 'nilai' => 40,
                 'id_kategori' => 5,
             ],
             [
-                'nama_indikator' => 'Kayu',
+                'nama_fasilitas' => 'Kayu',
                 'nilai' => 30,
                 'id_kategori' => 5,
             ],
             [
-                'nama_indikator' => 'Anyaman bambu',
+                'nama_fasilitas' => 'Anyaman bambu',
                 'nilai' => 60,
                 'id_kategori' => 5,
             ],
             [
-                'nama_indikator' => 'Batang kayu',
+                'nama_fasilitas' => 'Batang kayu',
                 'nilai' => 90,
                 'id_kategori' => 5,
             ],
             [
-                'nama_indikator' => 'Bambu',
+                'nama_fasilitas' => 'Bambu',
                 'nilai' => 70,
                 'id_kategori' => 5,
             ],
             [
-                'nama_indikator' => 'Lainnya',
+                'nama_fasilitas' => 'Lainnya',
                 'nilai' => 0,
                 'id_kategori' => 5,
             ],
         ]);
 
-        $this->db->table('indikator')->insertBatch([
+        $this->db->table('fasilitas')->insertBatch([
             [
-                'nama_indikator' => 'Leher angsa',
+                'nama_fasilitas' => 'Leher angsa',
                 'nilai' => 0,
                 'id_kategori' => 6,
             ],
             [
-                'nama_indikator' => 'Plengsengan',
+                'nama_fasilitas' => 'Plengsengan',
                 'nilai' => 0,
                 'id_kategori' => 6,
             ],
             [
-                'nama_indikator' => 'Cemplung/cubluk',
+                'nama_fasilitas' => 'Cemplung/cubluk',
                 'nilai' => 80,
                 'id_kategori' => 6,
             ],
             [
-                'nama_indikator' => 'Tidak pakai',
+                'nama_fasilitas' => 'Tidak pakai',
                 'nilai' => 100,
                 'id_kategori' => 6,
             ],
         ]);
 
-        $this->db->table('indikator')->insertBatch([
+        $this->db->table('fasilitas')->insertBatch([
             [
-                'nama_indikator' => 'Marmer/granit',
+                'nama_fasilitas' => 'Marmer/granit',
                 'nilai' => 0,
                 'id_kategori' => 7,
             ],
             [
-                'nama_indikator' => 'Keramik',
+                'nama_fasilitas' => 'Keramik',
                 'nilai' => 0,
                 'id_kategori' => 7,
             ],
             [
-                'nama_indikator' => 'Parket/vinil/permadani',
+                'nama_fasilitas' => 'Parket/vinil/permadani',
                 'nilai' => 0,
                 'id_kategori' => 7,
             ],
             [
-                'nama_indikator' => 'Ubin/tegel/teraso',
+                'nama_fasilitas' => 'Ubin/tegel/teraso',
                 'nilai' => 0,
                 'id_kategori' => 7,
             ],
             [
-                'nama_indikator' => 'Kayu/papan kualitas tinggi',
+                'nama_fasilitas' => 'Kayu/papan kualitas tinggi',
                 'nilai' => 0,
                 'id_kategori' => 7,
             ],
             [
-                'nama_indikator' => 'Semen/batu merah',
+                'nama_fasilitas' => 'Semen/batu merah',
                 'nilai' => 40,
                 'id_kategori' => 7,
             ],
             [
-                'nama_indikator' => 'Bambu',
+                'nama_fasilitas' => 'Bambu',
                 'nilai' => 90,
                 'id_kategori' => 7,
             ],
             [
-                'nama_indikator' => 'Kayu/papan kualitas rendah',
+                'nama_fasilitas' => 'Kayu/papan kualitas rendah',
                 'nilai' => 80,
                 'id_kategori' => 7,
             ],
             [
-                'nama_indikator' => 'Tanah',
+                'nama_fasilitas' => 'Tanah',
                 'nilai' => 100,
                 'id_kategori' => 7,
             ],
             [
-                'nama_indikator' => 'Lainnya',
+                'nama_fasilitas' => 'Lainnya',
                 'nilai' => 0,
                 'id_kategori' => 7,
+            ],
+        ]);
+
+        $this->db->table('fasilitas')->insertBatch([
+            [
+                'nama_fasilitas' => 'Bagus/kualitas tinggi',
+                'nilai' => 0,
+                'id_kategori' => 8,
+            ],
+            [
+                'nama_fasilitas' => 'Jelek/kualitas rendah',
+                'nilai' => 90,
+                'id_kategori' => 8,
+            ],
+        ]);
+
+        $this->db->table('fasilitas')->insertBatch([
+            [
+                'nama_fasilitas' => 'Air kemasan bermerk',
+                'nilai' => 0,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Air isi ulang',
+                'nilai' => 0,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Ledeng meteran',
+                'nilai' => 0,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Ledeng eceran',
+                'nilai' => 60,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Sumur bor/pompa',
+                'nilai' => 70,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Sumur terlindungi',
+                'nilai' => 80,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Sumur tak terlindungi',
+                'nilai' => 80,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Mata air terlindungi',
+                'nilai' => 85,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Mata air tak terlindungi',
+                'nilai' => 95,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Air sungai/waduk/danau',
+                'nilai' => 95,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Air hujan',
+                'nilai' => 95,
+                'id_kategori' => 9,
+            ],
+            [
+                'nama_fasilitas' => 'Lainnya',
+                'nilai' => 0,
+                'id_kategori' => 9,
+            ],
+        ]);
+
+        $this->db->table('fasilitas')->insertBatch([
+            [
+                'nama_fasilitas' => 'Listrik PLN',
+                'nilai' => 0,
+                'id_kategori' => 10,
+            ],
+            [
+                'nama_fasilitas' => 'Listrik non PLN',
+                'nilai' => 100,
+                'id_kategori' => 9,
+            ],
+        ]);
+
+        $this->db->table('fasilitas')->insertBatch([
+            [
+                'nama_fasilitas' => 'Listrik PLN',
+                'nilai' => 0,
+                'id_kategori' => 10,
+            ],
+            [
+                'nama_fasilitas' => 'Listrik non PLN',
+                'nilai' => 100,
+                'id_kategori' => 9,
+            ],
+        ]);
+
+        $this->db->table('kabupaten')->insertBatch([
+            [
+                'id_kabupaten' => '001',
+                'nama_kabupaten' => 'KABUPATEN TANAH LAUT',
+            ],
+            [
+                'id_kabupaten' => '002',
+                'nama_kabupaten' => 'KABUPATEN KOTA BARU',
+            ],
+            [
+                'id_kabupaten' => '003',
+                'nama_kabupaten' => 'KABUPATEN BANJAR',
+            ],
+            [
+                'id_kabupaten' => '004',
+                'nama_kabupaten' => 'KABUPATEN BARITO KUALA',
+            ],
+            [
+                'id_kabupaten' => '005',
+                'nama_kabupaten' => 'KABUPATEN TAPIN',
+            ],
+            [
+                'id_kabupaten' => '006',
+                'nama_kabupaten' => 'KABUPATEN HULU SUNGAI SELATAN',
+            ],
+            [
+                'id_kabupaten' => '007',
+                'nama_kabupaten' => 'KABUPATEN HULU SUNGAI TENGAH',
+            ],
+            [
+                'id_kabupaten' => '008',
+                'nama_kabupaten' => 'KABUPATEN HULU SUNGAI UTARA',
+            ],
+            [
+                'id_kabupaten' => '009',
+                'nama_kabupaten' => 'KABUPATEN TABALONG',
+            ],
+            [
+                'id_kabupaten' => '010',
+                'nama_kabupaten' => 'KABUPATEN TANAH BUMBU',
+            ],
+            [
+                'id_kabupaten' => '011',
+                'nama_kabupaten' => 'KABUPATEN BALANGAN',
+            ],
+            [
+                'id_kabupaten' => '071',
+                'nama_kabupaten' => 'KOTA BANJARMASIN',
+            ],
+            [
+                'id_kabupaten' => '072',
+                'nama_kabupaten' => 'KOTA BANJARBARU',
             ],
         ]);
     }

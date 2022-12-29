@@ -4,18 +4,18 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Indikator extends Migration
+class Fasilitas extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'id_indikator' => [
+            'id_fasilitas' => [
                 'type'           => 'INT',
                 'constraint'     => 10,
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'nama_indikator' => [
+            'nama_fasilitas' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
             ],
@@ -30,14 +30,14 @@ class Indikator extends Migration
             ],
         ]);
 
-        $this->forge->addForeignKey('id_kategori', 'kategori_indikator', 'id_kategori', 'CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('id_kategori', 'kategori_fasilitas', 'id_kategori', 'CASCADE', 'CASCADE');
 
-        $this->forge->addKey('id_indikator', true);
-        $this->forge->createTable('indikator');
+        $this->forge->addKey('id_fasilitas', true);
+        $this->forge->createTable('fasilitas');
     }
 
     public function down()
     {
-        $this->forge->dropTable('indikator');
+        $this->forge->dropTable('fasilitas');
     }
 }

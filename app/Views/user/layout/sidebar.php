@@ -5,62 +5,62 @@ $uri = service('uri');
 <div class="sidebar-heading mt-4">
     Indikator
 </div>
-<li class="nav-item <?= $uri->getSegment(2) === 'jenis_lantai' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('indikator/jenis_lantai') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === '1' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas/1') ?>">
         <i class="fas fa-square fa-2x text-gray-300"></i>
         <span>Jenis Lantai</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(2) === 'jenis_dinding' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('indikator/jenis_dinding') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === '2' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas/2') ?>">
         <i class="fas fa-house-user fa-2x text-gray-300"></i>
         <span>Jenis Dinding</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(2) === 'fasilitas_bab' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('indikator/fasilitas_bab') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === '3' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas/3') ?>">
         <i class="fas fa-toilet fa-2x text-gray-300"></i>
         <span>Fasilitas BAB</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(2) === 'sumber_penerangan' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('indikator/sumber_penerangan') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === '4' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas/4') ?>">
         <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
         <span>Sumber Penerangan</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(2) === 'sumber_airminum' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('indikator/sumber_airminum') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === '5' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas/5') ?>">
         <i class="fas fa-bottle-water fa-2x text-gray-300"></i>
         <span>Sumber Air Minum</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(2) === 'bahanbakar_masak' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('indikator/bahanbakar_masak') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === '6' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas/6') ?>">
         <i class="fas fa-fire fa-2x text-gray-300"></i>
         <span>Bahan Bakar Masak</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(2) === 'daya_listrik' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('indikator/daya_listrik') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === '7' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas/7') ?>">
         <i class="fas fa-bolt fa-2x text-gray-300"></i>
         <span>Daya Listrik</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(2) === 'jenis_atap' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('indikator/jenis_atap') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === '8' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas/8') ?>">
         <i class="fas fa-person-shelter fa-2x text-gray-300"></i>
         <span>Jenis Atap</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(2) === 'jenis_kloset' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('indikator/jenis_kloset') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === '9' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas/9') ?>">
         <i class="fas fa-restroom fa-2x text-gray-300"></i>
         <span>Jenis Kloset</span>
     </a>
 </li>
-<li class="nav-item <?= $uri->getSegment(2) === 'kondisi_atap' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('indikator/kondisi_atap') ?>">
+<li class="nav-item <?= $uri->getSegment(2) === '10' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas/10') ?>">
         <i class="fas fa-person-shelter fa-2x text-gray-300"></i>
         <span>Kondisi Atap</span>
     </a>
@@ -69,8 +69,8 @@ $uri = service('uri');
 <div class="sidebar-heading mt-4">
     Tabel
 </div>
-<li class="nav-item <?= $uri->getSegment(1) === 'tabel' ? 'active' : '' ?>">
-    <a class="nav-link" href="<?= base_url('tabel') ?>">
+<li class="nav-item <?= $uri->getSegment(1) === '' ? 'active' : '' ?>">
+    <a class="nav-link" href="<?= base_url('fasilitas') ?>">
         <i class="fas fa-table fa-2x text-gray-300"></i>
         <span>Tabel</span>
     </a>
