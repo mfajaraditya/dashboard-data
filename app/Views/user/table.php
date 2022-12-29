@@ -144,11 +144,11 @@
         <?php foreach ($kemiskinan as $row) : ?>
           <tr>
             <th scope="row"><?= $i++; ?></th>
-            <td><?= $row['nama_kabupaten']; ?></td>
-            <td><?= $row['tinggi']; ?></td>
-            <td><?= $row['sedang']; ?></td>
-            <td><?= $row['rendah']; ?></td>
-            <td><?= $total_data; ?></td>
+            <td><?= $row['nama_kabupaten'] ?></td>
+            <td><?= $row['tinggi'] ?></td>
+            <td><?= $row['sedang'] ?></td>
+            <td><?= $row['rendah'] ?></td>
+            <td><?= $row['rendah'] + $row['sedang'] + $row['tinggi'] ?></td>
           </tr>
         <?php endforeach; ?>
       </tbody>

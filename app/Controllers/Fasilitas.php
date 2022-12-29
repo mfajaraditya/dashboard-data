@@ -41,21 +41,36 @@ class Fasilitas extends BaseController
   public function table()
   {
     $data['title'] = 'Tabel Kemiskinan';
-    $data['total_data'] = $this->kluster->countAllResults();
-    $data['kemiskinan_rendah'] = $this->kluster->getNilaiCount('rendah');
-    $data['kemiskinan_sedang'] = $this->kluster->getNilaiCount('sedang');
-    $data['kemiskinan_tinggi'] = $this->kluster->getNilaiCount('tinggi');
+    $kluster = $this->kluster->getPersentase();
+    $data['kemiskinan_rendah'] = 0;
+    $data['kemiskinan_sedang'] = 0;
+    $data['kemiskinan_tinggi'] = 0;
 
     $kabupaten = $this->kabupaten->whereIn('id_kabupaten', [4, 8, 10])->findAll();
 
     foreach ($kabupaten as $item) {
-      $data['kemiskinan'][] = [
+      $data['kemiskinan'][$item['id_kabupaten']] = [
         'nama_kabupaten' => $item['nama_kabupaten'],
-        'rendah' => $this->kluster->getNilaiCount('rendah', $item['id_kabupaten']),
-        'sedang' => $this->kluster->getNilaiCount('sedang', $item['id_kabupaten']),
-        'tinggi' => $this->kluster->getNilaiCount('tinggi', $item['id_kabupaten']),
+        'rendah' => 0,
+        'sedang' => 0,
+        'tinggi' => 0,
       ];
     }
+
+    foreach ($kluster as $key) {
+      if ($key['persentase'] <= 30) {
+        $data['kemiskinan_rendah']++;
+        $data['kemiskinan'][$key['id_kabupaten']]['rendah']++;
+      } else if ($key['persentase'] > 30 && $key['persentase'] < 50) {
+        $data['kemiskinan_sedang']++;
+        $data['kemiskinan'][$key['id_kabupaten']]['sedang']++;
+      } else if ($key['persentase'] >= 50) {
+        $data['kemiskinan_tinggi']++;
+        $data['kemiskinan'][$key['id_kabupaten']]['tinggi']++;
+      }
+    }
+
+    $data['total_data'] = $data['kemiskinan_rendah'] + $data['kemiskinan_sedang'] + $data['kemiskinan_tinggi'];
 
     return view('/user/table', $data);
   }

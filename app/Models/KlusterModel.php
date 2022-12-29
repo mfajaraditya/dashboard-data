@@ -23,6 +23,18 @@ class KlusterModel extends Model
     return $builder->groupBy('nilai_fasilitas.id_fasilitas')->findAll();
   }
 
+  public function getPersentase()
+  {
+    return $this->db
+      ->table('nilai_fasilitas')
+      ->select('kluster.idbdt, id_kabupaten, SUM(nilai) / 10 AS persentase')
+      ->join('fasilitas', 'nilai_fasilitas.id_fasilitas = fasilitas.id_fasilitas')
+      ->join('kluster', 'kluster.idbdt = nilai_fasilitas.idbdt')
+      ->groupBy(['idbdt', 'id_kabupaten'])
+      ->get()
+      ->getResultArray();
+  }
+
   public function getNilaiCount($skala, $id_kabupaten = null)
   {
     $subQuery = $this->db
